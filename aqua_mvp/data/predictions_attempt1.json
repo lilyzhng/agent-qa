@@ -1,0 +1,410 @@
+{
+ "30": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_20"
+ },
+ "37": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_40"
+ },
+ "122": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_40"
+ },
+ "137": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "138": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_40"
+ },
+ "171": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_40"
+ },
+ "210": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_80"
+ },
+ "211": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_70"
+ },
+ "215": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_50"
+ },
+ "220": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_40"
+ },
+ "242": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_40"
+ },
+ "256": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_50"
+ },
+ "20": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "34": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "48": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_75"
+ },
+ "60": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_30"
+ },
+ "64": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_50"
+ },
+ "82": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_75"
+ },
+ "90": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_75"
+ },
+ "91": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_75"
+ },
+ "92": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_75"
+ },
+ "93": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_75"
+ },
+ "100": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "131": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_35"
+ },
+ "136": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_20"
+ },
+ "163": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "164": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "166": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_30"
+ },
+ "168": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_65"
+ },
+ "177": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_55"
+ },
+ "178": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_55"
+ },
+ "181": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "194": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "237": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "253": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_65"
+ },
+ "269": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_75"
+ },
+ "275": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_75"
+ },
+ "305": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_30"
+ },
+ "306": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_30"
+ },
+ "400": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_95"
+ },
+ "401": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "416": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "424": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "429": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "453": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "454": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "456": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_45"
+ },
+ "505": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_75"
+ },
+ "527": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_70"
+ },
+ "195": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_30"
+ },
+ "170": {
+  "is_speed_limit": true,
+  "fine_label": "end_of_speed_limit_70"
+ },
+ "175": {
+  "is_speed_limit": true,
+  "fine_label": "end_of_speed_limit_70"
+ },
+ "50": {
+  "is_speed_limit": true,
+  "fine_label": "end_of_speed_limit_70"
+ },
+ "68": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "176": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "126": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "148": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "57": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "2": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "199": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "71": {
+  "is_speed_limit": true,
+  "fine_label": "advisory_25"
+ },
+ "141": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "158": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "180": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "165": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "72": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "19": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "153": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "95": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "73": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "114": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "13": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "47": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "134": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "86": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "145": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "46": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "54": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "40": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "17": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "139": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "150": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "49": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "0": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "193": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "149": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "84": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "58": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "130": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "83": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "42": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "59": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "76": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "151": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "129": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "3": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "135": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "156": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "35": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "36": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ },
+ "302": {
+  "is_speed_limit": true,
+  "fine_label": "speed_limit_30"
+ },
+ "117": {
+  "is_speed_limit": false,
+  "fine_label": "not_a_speed_limit"
+ }
+}

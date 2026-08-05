@@ -1,0 +1,114 @@
+{
+ "tp": 49,
+ "fp": 10,
+ "fn": 7,
+ "tn": 41,
+ "precision": 0.831,
+ "recall": 0.875,
+ "f1": 0.852,
+ "is_numbered_count": 0,
+ "errors": [
+  {
+   "id": 137,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 138,
+   "gt": "regulatory-40",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 93,
+   "gt": "advisory-75",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 131,
+   "gt": "advisory-35",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 195,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 158,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 73,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 86,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 54,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 49,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 193,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 36,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 302,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 603,
+   "gt": "advisory-60",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 644,
+   "gt": "regulatory-65",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 651,
+   "gt": "advisory-40",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 653,
+   "gt": "regulatory-65",
+   "pred": "missed",
+   "kind": "FN"
+  }
+ ]
+}

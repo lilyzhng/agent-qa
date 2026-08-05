@@ -1,0 +1,29 @@
+evaluated 103 items (predictions: 103)
+detection:  TP=51 FP=8 FN=3 TN=41
+precision=0.864 recall=0.944 f1=0.903
+number accuracy on TP: 39/51 = 0.765
+
+errors:
+  (137, 'regulatory-45', 'advisory_43', 'wrong_number')
+  (138, 'regulatory-40', 'missed', 'FN')
+  (171, 'regulatory-40', 'speed_limit_20', 'wrong_number')
+  (242, 'regulatory-40', 'speed_limit_5', 'wrong_number')
+  (34, 'advisory-45', 'advisory_5', 'wrong_number')
+  (90, 'advisory-75', 'not_a_speed_limit', 'wrong_number')
+  (92, 'advisory-75', 'speed_limit_5', 'wrong_number')
+  (93, 'advisory-75', 'missed', 'FN')
+  (131, 'advisory-35', 'missed', 'FN')
+  (163, 'advisory-45', 'advisory_25', 'wrong_number')
+  (177, 'advisory-55', 'end_of_speed_limit_5', 'wrong_number')
+  (237, 'advisory-45', 'end_of_speed_limit_5', 'wrong_number')
+  (275, 'advisory-75', 'speed_limit_5', 'wrong_number')
+  (416, 'advisory-45', 'advisory_5', 'wrong_number')
+  (453, 'advisory-45', 'advisory_5', 'wrong_number')
+  (158, 'not_a_speed_limit', 'end_of_speed_limit_5', 'FP')
+  (73, 'not_a_speed_limit', 'end_of_speed_limit_30', 'FP')
+  (86, 'not_a_speed_limit', 'end_of_speed_limit_5', 'FP')
+  (54, 'not_a_speed_limit', 'speed_limit_5', 'FP')
+  (49, 'not_a_speed_limit', 'not_a_speed_limit', 'FP')
+  (193, 'not_a_speed_limit', 'not_a_speed_limit', 'FP')
+  (36, 'not_a_speed_limit', 'speed_limit_5', 'FP')
+  (302, 'not_a_speed_limit', 'speed_limit_30', 'FP')

@@ -1,0 +1,22 @@
+evaluated 103 items (predictions: 103)
+detection:  TP=39 FP=1 FN=14 TN=49
+precision=0.975 recall=0.736 f1=0.839
+number accuracy on TP: 38/39 = 0.974
+
+errors:
+  (137, 'regulatory-45', 'missed', 'FN')
+  (210, 'regulatory--maximum-speed-limit-80', 'speed_limit_30', 'wrong_number')
+  (211, 'regulatory--maximum-speed-limit-70', 'missed', 'FN')
+  (215, 'regulatory--maximum-speed-limit-50', 'missed', 'FN')
+  (220, 'regulatory--maximum-speed-limit-40', 'missed', 'FN')
+  (256, 'regulatory--maximum-speed-limit-50', 'missed', 'FN')
+  (60, 'advisory-30', 'missed', 'FN')
+  (92, 'advisory-75', 'missed', 'FN')
+  (93, 'advisory-75', 'missed', 'FN')
+  (136, 'advisory-20', 'missed', 'FN')
+  (168, 'advisory-65', 'missed', 'FN')
+  (305, 'advisory-30', 'missed', 'FN')
+  (306, 'advisory-30', 'missed', 'FN')
+  (400, 'advisory-95', 'missed', 'FN')
+  (195, 'regulatory-30', 'missed', 'FN')
+  (71, 'not_a_speed_limit', 'advisory_25', 'FP')

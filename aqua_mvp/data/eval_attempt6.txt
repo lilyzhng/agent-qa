@@ -1,0 +1,11 @@
+evaluated 103 items (predictions: 102)
+detection:  TP=49 FP=1 FN=4 TN=49
+precision=0.980 recall=0.925 f1=0.951
+is_numbered=true on 71/102 predictions
+
+errors:
+  (242, 'regulatory-40', 'missed', 'FN')
+  (93, 'advisory-75', 'missed', 'FN')
+  (416, 'advisory-45', 'missed', 'FN')
+  (71, 'advisory-25', 'missed', 'FN')
+  (302, 'not_a_speed_limit', 'flagged', 'FP')

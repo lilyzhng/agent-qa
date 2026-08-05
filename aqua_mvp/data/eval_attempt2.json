@@ -1,0 +1,30 @@
+{
+ "tp": 53,
+ "fp": 2,
+ "fn": 1,
+ "tn": 47,
+ "precision": 0.964,
+ "recall": 0.981,
+ "f1": 0.972,
+ "number_accuracy": 1.0,
+ "errors": [
+  {
+   "id": 137,
+   "gt": "regulatory-45",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 76,
+   "gt": "not_a_speed_limit",
+   "pred": "advisory_0",
+   "kind": "FP"
+  },
+  {
+   "id": 302,
+   "gt": "not_a_speed_limit",
+   "pred": "speed_limit_30",
+   "kind": "FP"
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "210": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "137": {
+  "is_speed_limit": false,
+  "is_numbered": true
+ },
+ "138": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "171": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "211": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "30": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "122": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "220": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "34": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "242": {
+  "is_speed_limit": false,
+  "is_numbered": true
+ },
+ "20": {
+  "is_speed_limit": false,
+  "is_numbered": true
+ },
+ "256": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "60": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "48": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "215": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "64": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "90": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "92": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "93": {
+  "is_speed_limit": false,
+  "is_numbered": true
+ },
+ "164": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "131": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "91": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "163": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "82": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "177": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "168": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "136": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "178": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "166": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "100": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "181": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "194": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "275": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "269": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "305": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "306": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "401": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "237": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "253": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "424": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "400": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "454": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "429": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "453": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "456": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "527": {
+  "is_speed_limit": false,
+  "is_numbered": true
+ },
+ "175": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "195": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "50": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "176": {
+  "is_speed_limit": false,
+  "is_numbered": true
+ },
+ "170": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "505": {
+  "is_speed_limit": true,
+  "is_numbered": true
+ },
+ "68": {
+  "is_speed_limit": false,
+  "is_numbered": false
+ }
+}

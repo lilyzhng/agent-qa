@@ -1,0 +1,72 @@
+{
+ "tp": 48,
+ "fp": 2,
+ "fn": 8,
+ "tn": 49,
+ "precision": 0.96,
+ "recall": 0.857,
+ "f1": 0.906,
+ "is_numbered_count": 71,
+ "errors": [
+  {
+   "id": 242,
+   "gt": "regulatory-40",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 93,
+   "gt": "advisory-75",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 416,
+   "gt": "advisory-45",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 195,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 71,
+   "gt": "advisory-25",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 302,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 603,
+   "gt": "advisory-60",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 644,
+   "gt": "regulatory-65",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 651,
+   "gt": "advisory-40",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 653,
+   "gt": "regulatory-65",
+   "pred": "missed",
+   "kind": "FN"
+  }
+ ]
+}

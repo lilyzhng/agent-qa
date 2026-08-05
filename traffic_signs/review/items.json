@@ -1,0 +1,802 @@
+[
+ {
+  "id": 0,
+  "crop": "crops/crop_000.png",
+  "image": "000012.jpg",
+  "bbox_id": 27,
+  "label": "regulatory--maximum-speed-limit-110--g1",
+  "short": "maximum-speed-limit-110"
+ },
+ {
+  "id": 1,
+  "crop": "crops/crop_001.png",
+  "image": "000022.jpg",
+  "bbox_id": 54,
+  "label": "complementary--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 2,
+  "crop": "crops/crop_002.png",
+  "image": "000027.jpg",
+  "bbox_id": 72,
+  "label": "regulatory--maximum-speed-limit-50--g6",
+  "short": "maximum-speed-limit-50--g6"
+ },
+ {
+  "id": 3,
+  "crop": "crops/crop_003.png",
+  "image": "000027.jpg",
+  "bbox_id": 74,
+  "label": "regulatory--maximum-speed-limit-50--g6",
+  "short": "maximum-speed-limit-50--g6"
+ },
+ {
+  "id": 4,
+  "crop": "crops/crop_004.png",
+  "image": "000033.jpg",
+  "bbox_id": 88,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 5,
+  "crop": "crops/crop_005.png",
+  "image": "000046.jpg",
+  "bbox_id": 114,
+  "label": "regulatory--maximum-speed-limit-80--g1",
+  "short": "maximum-speed-limit-80"
+ },
+ {
+  "id": 6,
+  "crop": "crops/crop_006.png",
+  "image": "000056.jpg",
+  "bbox_id": 142,
+  "label": "complementary--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 7,
+  "crop": "crops/crop_007.png",
+  "image": "000056.jpg",
+  "bbox_id": 143,
+  "label": "complementary--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 8,
+  "crop": "crops/crop_008.png",
+  "image": "000086.jpg",
+  "bbox_id": 212,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 9,
+  "crop": "crops/crop_009.png",
+  "image": "000088.jpg",
+  "bbox_id": 217,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 10,
+  "crop": "crops/crop_010.png",
+  "image": "000110.jpg",
+  "bbox_id": 255,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 11,
+  "crop": "crops/crop_011.png",
+  "image": "000110.jpg",
+  "bbox_id": 256,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 12,
+  "crop": "crops/crop_012.png",
+  "image": "000111.jpg",
+  "bbox_id": 257,
+  "label": "regulatory--maximum-speed-limit-30--g3",
+  "short": "maximum-speed-limit-30--g3"
+ },
+ {
+  "id": 13,
+  "crop": "crops/crop_013.png",
+  "image": "000115.jpg",
+  "bbox_id": 268,
+  "label": "regulatory--maximum-speed-limit-70--g1",
+  "short": "maximum-speed-limit-70"
+ },
+ {
+  "id": 14,
+  "crop": "crops/crop_014.png",
+  "image": "000115.jpg",
+  "bbox_id": 269,
+  "label": "regulatory--maximum-speed-limit-70--g1",
+  "short": "maximum-speed-limit-70"
+ },
+ {
+  "id": 15,
+  "crop": "crops/crop_015.png",
+  "image": "000120.jpg",
+  "bbox_id": 288,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 16,
+  "crop": "crops/crop_016.png",
+  "image": "000134.jpg",
+  "bbox_id": 313,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 17,
+  "crop": "crops/crop_017.png",
+  "image": "000151.jpg",
+  "bbox_id": 342,
+  "label": "regulatory--maximum-speed-limit-25--g1",
+  "short": "maximum-speed-limit-25"
+ },
+ {
+  "id": 18,
+  "crop": "crops/crop_018.png",
+  "image": "000152.jpg",
+  "bbox_id": 344,
+  "label": "complementary--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 19,
+  "crop": "crops/crop_019.png",
+  "image": "000152.jpg",
+  "bbox_id": 345,
+  "label": "complementary--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 20,
+  "crop": "crops/crop_020.png",
+  "image": "000155.jpg",
+  "bbox_id": 350,
+  "label": "regulatory--maximum-speed-limit-120--g1",
+  "short": "maximum-speed-limit-120"
+ },
+ {
+  "id": 21,
+  "crop": "crops/crop_021.png",
+  "image": "000159.jpg",
+  "bbox_id": 358,
+  "label": "regulatory--maximum-speed-limit-25--g1",
+  "short": "maximum-speed-limit-25"
+ },
+ {
+  "id": 22,
+  "crop": "crops/crop_022.png",
+  "image": "000173.jpg",
+  "bbox_id": 381,
+  "label": "regulatory--maximum-speed-limit-50--g1",
+  "short": "maximum-speed-limit-50"
+ },
+ {
+  "id": 23,
+  "crop": "crops/crop_023.png",
+  "image": "000191.jpg",
+  "bbox_id": 434,
+  "label": "complementary--maximum-speed-limit-50--g1",
+  "short": "maximum-speed-limit-50"
+ },
+ {
+  "id": 24,
+  "crop": "crops/crop_024.png",
+  "image": "000200.jpg",
+  "bbox_id": 460,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 25,
+  "crop": "crops/crop_025.png",
+  "image": "000211.jpg",
+  "bbox_id": 485,
+  "label": "regulatory--maximum-speed-limit-5--g1",
+  "short": "maximum-speed-limit-5"
+ },
+ {
+  "id": 26,
+  "crop": "crops/crop_026.png",
+  "image": "000212.jpg",
+  "bbox_id": 488,
+  "label": "regulatory--maximum-speed-limit-15--g1",
+  "short": "maximum-speed-limit-15"
+ },
+ {
+  "id": 27,
+  "crop": "crops/crop_027.png",
+  "image": "000234.jpg",
+  "bbox_id": 538,
+  "label": "complementary--maximum-speed-limit-25--g1",
+  "short": "maximum-speed-limit-25"
+ },
+ {
+  "id": 28,
+  "crop": "crops/crop_028.png",
+  "image": "000235.jpg",
+  "bbox_id": 539,
+  "label": "regulatory--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 29,
+  "crop": "crops/crop_029.png",
+  "image": "000237.jpg",
+  "bbox_id": 543,
+  "label": "regulatory--maximum-speed-limit-55--g2",
+  "short": "maximum-speed-limit-55"
+ },
+ {
+  "id": 30,
+  "crop": "crops/crop_030.png",
+  "image": "000239.jpg",
+  "bbox_id": 554,
+  "label": "regulatory--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 31,
+  "crop": "crops/crop_031.png",
+  "image": "000241.jpg",
+  "bbox_id": 558,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 32,
+  "crop": "crops/crop_032.png",
+  "image": "000242.jpg",
+  "bbox_id": 559,
+  "label": "complementary--maximum-speed-limit-75--g1",
+  "short": "maximum-speed-limit-75"
+ },
+ {
+  "id": 33,
+  "crop": "crops/crop_033.png",
+  "image": "000242.jpg",
+  "bbox_id": 560,
+  "label": "complementary--maximum-speed-limit-75--g1",
+  "short": "maximum-speed-limit-75"
+ },
+ {
+  "id": 34,
+  "crop": "crops/crop_034.png",
+  "image": "000260.jpg",
+  "bbox_id": 590,
+  "label": "regulatory--maximum-speed-limit-120--g1",
+  "short": "maximum-speed-limit-120"
+ },
+ {
+  "id": 35,
+  "crop": "crops/crop_035.png",
+  "image": "000264.jpg",
+  "bbox_id": 602,
+  "label": "regulatory--maximum-speed-limit-70--g1",
+  "short": "maximum-speed-limit-70"
+ },
+ {
+  "id": 36,
+  "crop": "crops/crop_036.png",
+  "image": "000264.jpg",
+  "bbox_id": 603,
+  "label": "regulatory--maximum-speed-limit-70--g1",
+  "short": "maximum-speed-limit-70"
+ },
+ {
+  "id": 37,
+  "crop": "crops/crop_037.png",
+  "image": "000272.jpg",
+  "bbox_id": 618,
+  "label": "regulatory--maximum-speed-limit-10--g1",
+  "short": "maximum-speed-limit-10"
+ },
+ {
+  "id": 38,
+  "crop": "crops/crop_038.png",
+  "image": "000273.jpg",
+  "bbox_id": 619,
+  "label": "regulatory--maximum-speed-limit-5--g1",
+  "short": "maximum-speed-limit-5"
+ },
+ {
+  "id": 39,
+  "crop": "crops/crop_039.png",
+  "image": "000289.jpg",
+  "bbox_id": 648,
+  "label": "regulatory--maximum-speed-limit-led-100--g1",
+  "short": "maximum-speed-limit-led-100"
+ },
+ {
+  "id": 40,
+  "crop": "crops/crop_040.png",
+  "image": "000289.jpg",
+  "bbox_id": 649,
+  "label": "regulatory--maximum-speed-limit-led-100--g1",
+  "short": "maximum-speed-limit-led-100"
+ },
+ {
+  "id": 41,
+  "crop": "crops/crop_041.png",
+  "image": "000291.jpg",
+  "bbox_id": 657,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 42,
+  "crop": "crops/crop_042.png",
+  "image": "000300.jpg",
+  "bbox_id": 679,
+  "label": "regulatory--maximum-speed-limit-30--g3",
+  "short": "maximum-speed-limit-30--g3"
+ },
+ {
+  "id": 43,
+  "crop": "crops/crop_043.png",
+  "image": "000302.jpg",
+  "bbox_id": 681,
+  "label": "regulatory--maximum-speed-limit-80--g1",
+  "short": "maximum-speed-limit-80"
+ },
+ {
+  "id": 44,
+  "crop": "crops/crop_044.png",
+  "image": "000330.jpg",
+  "bbox_id": 741,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 45,
+  "crop": "crops/crop_045.png",
+  "image": "000330.jpg",
+  "bbox_id": 742,
+  "label": "regulatory--maximum-speed-limit-25--g1",
+  "short": "maximum-speed-limit-25"
+ },
+ {
+  "id": 46,
+  "crop": "crops/crop_046.png",
+  "image": "000331.jpg",
+  "bbox_id": 746,
+  "label": "regulatory--maximum-speed-limit-25--g1",
+  "short": "maximum-speed-limit-25"
+ },
+ {
+  "id": 47,
+  "crop": "crops/crop_047.png",
+  "image": "000332.jpg",
+  "bbox_id": 749,
+  "label": "regulatory--maximum-speed-limit-70--g1",
+  "short": "maximum-speed-limit-70"
+ },
+ {
+  "id": 48,
+  "crop": "crops/crop_048.png",
+  "image": "000341.jpg",
+  "bbox_id": 763,
+  "label": "complementary--maximum-speed-limit-30--g1",
+  "short": "maximum-speed-limit-30"
+ },
+ {
+  "id": 49,
+  "crop": "crops/crop_049.png",
+  "image": "000347.jpg",
+  "bbox_id": 776,
+  "label": "regulatory--end-of-maximum-speed-limit-70--g1",
+  "short": "end-of-maximum-speed-limit-70"
+ },
+ {
+  "id": 50,
+  "crop": "crops/crop_050.png",
+  "image": "000348.jpg",
+  "bbox_id": 779,
+  "label": "regulatory--maximum-speed-limit-45--g1",
+  "short": "maximum-speed-limit-45"
+ },
+ {
+  "id": 51,
+  "crop": "crops/crop_051.png",
+  "image": "000348.jpg",
+  "bbox_id": 780,
+  "label": "regulatory--maximum-speed-limit-45--g1",
+  "short": "maximum-speed-limit-45"
+ },
+ {
+  "id": 52,
+  "crop": "crops/crop_052.png",
+  "image": "000349.jpg",
+  "bbox_id": 782,
+  "label": "regulatory--maximum-speed-limit-70--g1",
+  "short": "maximum-speed-limit-70"
+ },
+ {
+  "id": 53,
+  "crop": "crops/crop_053.png",
+  "image": "000351.jpg",
+  "bbox_id": 786,
+  "label": "regulatory--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 54,
+  "crop": "crops/crop_054.png",
+  "image": "000376.jpg",
+  "bbox_id": 833,
+  "label": "complementary--maximum-speed-limit-35--g1",
+  "short": "maximum-speed-limit-35"
+ },
+ {
+  "id": 55,
+  "crop": "crops/crop_055.png",
+  "image": "000391.jpg",
+  "bbox_id": 885,
+  "label": "complementary--maximum-speed-limit-45--g1",
+  "short": "maximum-speed-limit-45"
+ },
+ {
+  "id": 56,
+  "crop": "crops/crop_056.png",
+  "image": "000399.jpg",
+  "bbox_id": 916,
+  "label": "regulatory--maximum-speed-limit-70--g1",
+  "short": "maximum-speed-limit-70"
+ },
+ {
+  "id": 57,
+  "crop": "crops/crop_057.png",
+  "image": "000405.jpg",
+  "bbox_id": 932,
+  "label": "regulatory--maximum-speed-limit-70--g1",
+  "short": "maximum-speed-limit-70"
+ },
+ {
+  "id": 58,
+  "crop": "crops/crop_058.png",
+  "image": "000406.jpg",
+  "bbox_id": 933,
+  "label": "regulatory--maximum-speed-limit-40--g6",
+  "short": "maximum-speed-limit-40--g6"
+ },
+ {
+  "id": 59,
+  "crop": "crops/crop_059.png",
+  "image": "000409.jpg",
+  "bbox_id": 939,
+  "label": "regulatory--end-of-maximum-speed-limit-30--g2",
+  "short": "end-of-maximum-speed-limit-30"
+ },
+ {
+  "id": 60,
+  "crop": "crops/crop_060.png",
+  "image": "000415.jpg",
+  "bbox_id": 952,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 61,
+  "crop": "crops/crop_061.png",
+  "image": "000424.jpg",
+  "bbox_id": 964,
+  "label": "regulatory--maximum-speed-limit-30--g3",
+  "short": "maximum-speed-limit-30--g3"
+ },
+ {
+  "id": 62,
+  "crop": "crops/crop_062.png",
+  "image": "000436.jpg",
+  "bbox_id": 992,
+  "label": "regulatory--maximum-speed-limit-110--g1",
+  "short": "maximum-speed-limit-110"
+ },
+ {
+  "id": 63,
+  "crop": "crops/crop_063.png",
+  "image": "000441.jpg",
+  "bbox_id": 1002,
+  "label": "complementary--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 64,
+  "crop": "crops/crop_064.png",
+  "image": "000458.jpg",
+  "bbox_id": 1051,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 65,
+  "crop": "crops/crop_065.png",
+  "image": "000470.jpg",
+  "bbox_id": 1072,
+  "label": "complementary--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 66,
+  "crop": "crops/crop_066.png",
+  "image": "000476.jpg",
+  "bbox_id": 1085,
+  "label": "regulatory--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 67,
+  "crop": "crops/crop_067.png",
+  "image": "000478.jpg",
+  "bbox_id": 1091,
+  "label": "complementary--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 68,
+  "crop": "crops/crop_068.png",
+  "image": "000488.jpg",
+  "bbox_id": 1110,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 69,
+  "crop": "crops/crop_069.png",
+  "image": "000489.jpg",
+  "bbox_id": 1111,
+  "label": "regulatory--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 70,
+  "crop": "crops/crop_070.png",
+  "image": "000500.jpg",
+  "bbox_id": 1141,
+  "label": "regulatory--maximum-speed-limit-25--g2",
+  "short": "maximum-speed-limit-25"
+ },
+ {
+  "id": 71,
+  "crop": "crops/crop_071.png",
+  "image": "000509.jpg",
+  "bbox_id": 1162,
+  "label": "regulatory--truck-speed-limit-60--g1",
+  "short": "truck-speed-limit-60"
+ },
+ {
+  "id": 72,
+  "crop": "crops/crop_072.png",
+  "image": "000536.jpg",
+  "bbox_id": 1208,
+  "label": "regulatory--maximum-speed-limit-80--g1",
+  "short": "maximum-speed-limit-80"
+ },
+ {
+  "id": 73,
+  "crop": "crops/crop_073.png",
+  "image": "000540.jpg",
+  "bbox_id": 1216,
+  "label": "regulatory--maximum-speed-limit-15--g1",
+  "short": "maximum-speed-limit-15"
+ },
+ {
+  "id": 74,
+  "crop": "crops/crop_074.png",
+  "image": "000548.jpg",
+  "bbox_id": 1236,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 75,
+  "crop": "crops/crop_075.png",
+  "image": "000551.jpg",
+  "bbox_id": 1249,
+  "label": "regulatory--maximum-speed-limit-15--g1",
+  "short": "maximum-speed-limit-15"
+ },
+ {
+  "id": 76,
+  "crop": "crops/crop_076.png",
+  "image": "000552.jpg",
+  "bbox_id": 1252,
+  "label": "regulatory--maximum-speed-limit-led-100--g1",
+  "short": "maximum-speed-limit-led-100"
+ },
+ {
+  "id": 77,
+  "crop": "crops/crop_077.png",
+  "image": "000556.jpg",
+  "bbox_id": 1258,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 78,
+  "crop": "crops/crop_078.png",
+  "image": "000557.jpg",
+  "bbox_id": 1259,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 79,
+  "crop": "crops/crop_079.png",
+  "image": "000573.jpg",
+  "bbox_id": 1291,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 80,
+  "crop": "crops/crop_080.png",
+  "image": "000594.jpg",
+  "bbox_id": 1325,
+  "label": "complementary--maximum-speed-limit-40--g1",
+  "short": "maximum-speed-limit-40"
+ },
+ {
+  "id": 81,
+  "crop": "crops/crop_081.png",
+  "image": "000601.jpg",
+  "bbox_id": 1333,
+  "label": "regulatory--maximum-speed-limit-30--g3",
+  "short": "maximum-speed-limit-30--g3"
+ },
+ {
+  "id": 82,
+  "crop": "crops/crop_082.png",
+  "image": "000613.jpg",
+  "bbox_id": 1353,
+  "label": "complementary--maximum-speed-limit-30--g1",
+  "short": "maximum-speed-limit-30"
+ },
+ {
+  "id": 83,
+  "crop": "crops/crop_083.png",
+  "image": "000625.jpg",
+  "bbox_id": 1368,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 84,
+  "crop": "crops/crop_084.png",
+  "image": "000640.jpg",
+  "bbox_id": 1389,
+  "label": "regulatory--end-of-speed-limit-zone--g1",
+  "short": "end-of-speed-limit-zone"
+ },
+ {
+  "id": 85,
+  "crop": "crops/crop_085.png",
+  "image": "000642.jpg",
+  "bbox_id": 1391,
+  "label": "regulatory--maximum-speed-limit-25--g2",
+  "short": "maximum-speed-limit-25"
+ },
+ {
+  "id": 86,
+  "crop": "crops/crop_086.png",
+  "image": "000653.jpg",
+  "bbox_id": 1428,
+  "label": "regulatory--end-of-maximum-speed-limit-70--g1",
+  "short": "end-of-maximum-speed-limit-70"
+ },
+ {
+  "id": 87,
+  "crop": "crops/crop_087.png",
+  "image": "000658.jpg",
+  "bbox_id": 1446,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 88,
+  "crop": "crops/crop_088.png",
+  "image": "000661.jpg",
+  "bbox_id": 1449,
+  "label": "complementary--maximum-speed-limit-55--g1",
+  "short": "maximum-speed-limit-55"
+ },
+ {
+  "id": 89,
+  "crop": "crops/crop_089.png",
+  "image": "000663.jpg",
+  "bbox_id": 1453,
+  "label": "regulatory--maximum-speed-limit-65--g2",
+  "short": "maximum-speed-limit-65"
+ },
+ {
+  "id": 90,
+  "crop": "crops/crop_090.png",
+  "image": "000665.jpg",
+  "bbox_id": 1455,
+  "label": "complementary--maximum-speed-limit-30--g1",
+  "short": "maximum-speed-limit-30"
+ },
+ {
+  "id": 91,
+  "crop": "crops/crop_091.png",
+  "image": "000665.jpg",
+  "bbox_id": 1456,
+  "label": "complementary--maximum-speed-limit-30--g1",
+  "short": "maximum-speed-limit-30"
+ },
+ {
+  "id": 92,
+  "crop": "crops/crop_092.png",
+  "image": "000665.jpg",
+  "bbox_id": 1458,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 93,
+  "crop": "crops/crop_093.png",
+  "image": "000665.jpg",
+  "bbox_id": 1459,
+  "label": "regulatory--maximum-speed-limit-100--g1",
+  "short": "maximum-speed-limit-100"
+ },
+ {
+  "id": 94,
+  "crop": "crops/crop_094.png",
+  "image": "000670.jpg",
+  "bbox_id": 1482,
+  "label": "regulatory--end-of-maximum-speed-limit-70--g1",
+  "short": "end-of-maximum-speed-limit-70"
+ },
+ {
+  "id": 95,
+  "crop": "crops/crop_095.png",
+  "image": "000679.jpg",
+  "bbox_id": 1507,
+  "label": "regulatory--end-of-maximum-speed-limit-70--g2",
+  "short": "end-of-maximum-speed-limit-70"
+ },
+ {
+  "id": 96,
+  "crop": "crops/crop_096.png",
+  "image": "000679.jpg",
+  "bbox_id": 1509,
+  "label": "regulatory--end-of-maximum-speed-limit-70--g2",
+  "short": "end-of-maximum-speed-limit-70"
+ },
+ {
+  "id": 97,
+  "crop": "crops/crop_097.png",
+  "image": "000680.jpg",
+  "bbox_id": 1515,
+  "label": "regulatory--maximum-speed-limit-25--g1",
+  "short": "maximum-speed-limit-25"
+ },
+ {
+  "id": 98,
+  "crop": "crops/crop_098.png",
+  "image": "000696.jpg",
+  "bbox_id": 1550,
+  "label": "complementary--maximum-speed-limit-20--g1",
+  "short": "maximum-speed-limit-20"
+ },
+ {
+  "id": 99,
+  "crop": "crops/crop_099.png",
+  "image": "000701.jpg",
+  "bbox_id": 1558,
+  "label": "regulatory--maximum-speed-limit-30--g3",
+  "short": "maximum-speed-limit-30--g3"
+ }
+]

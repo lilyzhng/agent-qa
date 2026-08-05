@@ -1,0 +1,48 @@
+{
+ "tp": 52,
+ "fp": 2,
+ "fn": 4,
+ "tn": 49,
+ "precision": 0.963,
+ "recall": 0.929,
+ "f1": 0.945,
+ "is_numbered_count": 0,
+ "errors": [
+  {
+   "id": 195,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 302,
+   "gt": "not_a_speed_limit",
+   "pred": "flagged",
+   "kind": "FP"
+  },
+  {
+   "id": 603,
+   "gt": "advisory-60",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 644,
+   "gt": "regulatory-65",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 651,
+   "gt": "advisory-40",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 653,
+   "gt": "regulatory-65",
+   "pred": "missed",
+   "kind": "FN"
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "positives": [
+  {
+   "id": 210,
+   "image": "001464.jpg",
+   "bbox_id": 3366,
+   "old_gt": "complementary--maximum-speed-limit-75--g1",
+   "final_label": "regulatory--maximum-speed-limit-80",
+   "note": null
+  },
+  {
+   "id": 211,
+   "image": "001468.jpg",
+   "bbox_id": 3374,
+   "old_gt": "regulatory--maximum-speed-limit-led-100--g1",
+   "final_label": "regulatory--maximum-speed-limit-70",
+   "note": null
+  },
+  {
+   "id": 215,
+   "image": "001481.jpg",
+   "bbox_id": 3412,
+   "old_gt": "regulatory--maximum-speed-limit-led-100--g1",
+   "final_label": "regulatory--maximum-speed-limit-50",
+   "note": null
+  },
+  {
+   "id": 220,
+   "image": "001514.jpg",
+   "bbox_id": 3491,
+   "old_gt": "regulatory--maximum-speed-limit-100--g1",
+   "final_label": "regulatory--maximum-speed-limit-40",
+   "note": null
+  },
+  {
+   "id": 242,
+   "image": "001653.jpg",
+   "bbox_id": 3797,
+   "old_gt": "regulatory--maximum-speed-limit-10--g1",
+   "final_label": "regulatory--maximum-speed-limit-40",
+   "note": null
+  },
+  {
+   "id": 256,
+   "image": "001740.jpg",
+   "bbox_id": 4007,
+   "old_gt": "complementary--maximum-speed-limit-40--g1",
+   "final_label": "regulatory--maximum-speed-limit-50",
+   "note": null
+  }
+ ],
+ "hard_negatives": [
+  {
+   "id": 237,
+   "image": "001596.jpg",
+   "bbox_id": 3655,
+   "old_gt": "regulatory--maximum-speed-limit-120--g1",
+   "final_label": "warning--advisory-speed-limit-45",
+   "note": "advisory plaque 45 mph, labeled regulatory 120"
+  },
+  {
+   "id": 253,
+   "image": "001697.jpg",
+   "bbox_id": 3904,
+   "old_gt": "regulatory--maximum-speed-limit-100--g1",
+   "final_label": "warning--advisory-speed-limit-65",
+   "note": null
+  },
+  {
+   "id": 254,
+   "image": "001700.jpg",
+   "bbox_id": 3908,
+   "old_gt": "regulatory--maximum-speed-limit-45--g1",
+   "final_label": "regulatory--end-of-maximum-speed-limit-70",
+   "note": null
+  },
+  {
+   "id": 269,
+   "image": "001808.jpg",
+   "bbox_id": 4175,
+   "old_gt": "complementary--maximum-speed-limit-30--g1",
+   "final_label": "warning--advisory-speed-limit-75",
+   "note": null
+  },
+  {
+   "id": 275,
+   "image": "001863.jpg",
+   "bbox_id": 4323,
+   "old_gt": "complementary--maximum-speed-limit-30--g1",
+   "final_label": "warning--advisory-speed-limit-75",
+   "note": null
+  }
+ ],
+ "excluded": [
+  {
+   "id": 209,
+   "image": "001460.jpg",
+   "bbox_id": 3351,
+   "old_gt": "regulatory--maximum-speed-limit-25--g1",
+   "final_label": null,
+   "note": null
+  },
+  {
+   "id": 216,
+   "image": "001486.jpg",
+   "bbox_id": 3426,
+   "old_gt": "complementary--maximum-speed-limit-40--g1",
+   "final_label": null,
+   "note": null
+  },
+  {
+   "id": 229,
+   "image": "001554.jpg",
+   "bbox_id": 3553,
+   "old_gt": "regulatory--maximum-speed-limit-25--g1",
+   "final_label": null,
+   "note": null
+  },
+  {
+   "id": 234,
+   "image": "001588.jpg",
+   "bbox_id": 3636,
+   "old_gt": "regulatory--maximum-speed-limit-15--g1",
+   "final_label": "not Speed limit sign",
+   "note": null
+  },
+  {
+   "id": 268,
+   "image": "001805.jpg",
+   "bbox_id": 4169,
+   "old_gt": "regulatory--end-of-maximum-speed-limit-70--g1",
+   "final_label": null,
+   "note": null
+  },
+  {
+   "id": 274,
+   "image": "001847.jpg",
+   "bbox_id": 4271,
+   "old_gt": "complementary--maximum-speed-limit-55--g1",
+   "final_label": null,
+   "note": null
+  }
+ ]
+}

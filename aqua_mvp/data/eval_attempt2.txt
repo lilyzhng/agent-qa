@@ -1,0 +1,10 @@
+evaluated 103 items (predictions: 103)
+detection:  TP=52 FP=3 FN=1 TN=47
+precision=0.945 recall=0.981 f1=0.963
+number accuracy on TP: 52/52 = 1.000
+
+errors:
+  (137, 'regulatory-45', 'missed', 'FN')
+  (71, 'not_a_speed_limit', 'advisory_25', 'FP')
+  (76, 'not_a_speed_limit', 'advisory_0', 'FP')
+  (302, 'not_a_speed_limit', 'speed_limit_30', 'FP')

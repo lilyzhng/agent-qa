@@ -1,0 +1,102 @@
+[
+ {
+  "id": 210,
+  "verdict": "wrong_label",
+  "old": "complementary--maximum-speed-limit-75--g1",
+  "proposed": "regulatory--maximum-speed-limit-80",
+  "image": "001464.jpg",
+  "bbox_id": 3366,
+  "crop": "crop_210.png"
+ },
+ {
+  "id": 211,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-led-100--g1",
+  "proposed": "regulatory--maximum-speed-limit-70",
+  "image": "001468.jpg",
+  "bbox_id": 3374,
+  "crop": "crop_211.png"
+ },
+ {
+  "id": 215,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-led-100--g1",
+  "proposed": "regulatory--maximum-speed-limit-50",
+  "image": "001481.jpg",
+  "bbox_id": 3412,
+  "crop": "crop_215.png"
+ },
+ {
+  "id": 220,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": "regulatory--maximum-speed-limit-40",
+  "image": "001514.jpg",
+  "bbox_id": 3491,
+  "crop": "crop_220.png"
+ },
+ {
+  "id": 234,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-15--g1",
+  "proposed": "regulatory--maximum-speed-limit-30",
+  "image": "001588.jpg",
+  "bbox_id": 3636,
+  "crop": "crop_234.png"
+ },
+ {
+  "id": 237,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-120--g1",
+  "proposed": "warning--advisory-speed-limit-45",
+  "note": "advisory plaque 45 mph, labeled regulatory 120",
+  "image": "001596.jpg",
+  "bbox_id": 3655,
+  "crop": "crop_237.png"
+ },
+ {
+  "id": 253,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": "warning--advisory-speed-limit-65",
+  "image": "001697.jpg",
+  "bbox_id": 3904,
+  "crop": "crop_253.png"
+ },
+ {
+  "id": 254,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-45--g1",
+  "proposed": "regulatory--end-of-maximum-speed-limit-70",
+  "image": "001700.jpg",
+  "bbox_id": 3908,
+  "crop": "crop_254.png"
+ },
+ {
+  "id": 256,
+  "verdict": "wrong_label",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": "regulatory--maximum-speed-limit-50",
+  "image": "001740.jpg",
+  "bbox_id": 4007,
+  "crop": "crop_256.png"
+ },
+ {
+  "id": 269,
+  "verdict": "wrong_label",
+  "old": "complementary--maximum-speed-limit-30--g1",
+  "proposed": "warning--advisory-speed-limit-75",
+  "image": "001808.jpg",
+  "bbox_id": 4175,
+  "crop": "crop_269.png"
+ },
+ {
+  "id": 275,
+  "verdict": "wrong_label",
+  "old": "complementary--maximum-speed-limit-30--g1",
+  "proposed": "warning--advisory-speed-limit-75",
+  "image": "001863.jpg",
+  "bbox_id": 4323,
+  "crop": "crop_275.png"
+ }
+]

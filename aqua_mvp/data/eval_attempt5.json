@@ -1,0 +1,72 @@
+{
+ "tp": 48,
+ "fp": 2,
+ "fn": 6,
+ "tn": 47,
+ "precision": 0.96,
+ "recall": 0.889,
+ "f1": 0.923,
+ "number_accuracy": 0.958,
+ "errors": [
+  {
+   "id": 137,
+   "gt": "regulatory-45",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 242,
+   "gt": "regulatory-40",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 93,
+   "gt": "advisory-75",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 136,
+   "gt": "advisory-20",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 168,
+   "gt": "advisory-65",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 177,
+   "gt": "advisory-55",
+   "pred": "advisory_35",
+   "kind": "wrong_number"
+  },
+  {
+   "id": 275,
+   "gt": "advisory-75",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 416,
+   "gt": "advisory-45",
+   "pred": "end_of_speed_limit_5",
+   "kind": "wrong_number"
+  },
+  {
+   "id": 139,
+   "gt": "not_a_speed_limit",
+   "pred": "speed_limit_20",
+   "kind": "FP"
+  },
+  {
+   "id": 302,
+   "gt": "not_a_speed_limit",
+   "pred": "speed_limit_30",
+   "kind": "FP"
+  }
+ ]
+}

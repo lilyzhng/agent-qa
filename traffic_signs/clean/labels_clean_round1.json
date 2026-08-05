@@ -1,0 +1,2229 @@
+[
+ {
+  "image": "000022.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 53,
+    "label": "regulatory--dual-lanes-go-straight-on-right--g1",
+    "bbox": [
+     1634.4,
+     950.9,
+     61.4,
+     62.2
+    ]
+   },
+   {
+    "bbox_id": 55,
+    "label": "regulatory--stop-here-on-red-or-flashing-light--g2",
+    "bbox": [
+     1564.3,
+     1001.1,
+     39.0,
+     38.2
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000027.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 69,
+    "label": "regulatory--no-bicycles--g3",
+    "bbox": [
+     1741.2,
+     1208.5,
+     31.1,
+     34.1
+    ]
+   },
+   {
+    "bbox_id": 70,
+    "label": "regulatory--no-bicycles--g3",
+    "bbox": [
+     1231.2,
+     1141.5,
+     33.5,
+     34.1
+    ]
+   },
+   {
+    "bbox_id": 71,
+    "label": "complementary--priority-route-at-intersection--g1",
+    "bbox": [
+     1488.6,
+     1273.6,
+     20.7,
+     17.3
+    ]
+   },
+   {
+    "bbox_id": 73,
+    "label": "complementary--except-bicycles--g1",
+    "bbox": [
+     1249.5,
+     1221.0,
+     19.9,
+     20.9
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000033.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 87,
+    "label": "warning--railroad-intersection--g4",
+    "bbox": [
+     2233.6,
+     1503.7,
+     62.2,
+     60.4
+    ]
+   },
+   {
+    "bbox_id": 89,
+    "label": "warning--offset-roads--g3",
+    "bbox": [
+     1738.8,
+     1672.8,
+     15.1,
+     16.7
+    ]
+   },
+   {
+    "bbox_id": 90,
+    "label": "warning--curve-right--g2",
+    "bbox": [
+     1737.2,
+     1656.1,
+     14.3,
+     16.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000056.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 140,
+    "label": "warning--narrow-bridge--g3",
+    "bbox": [
+     2381.1,
+     1558.1,
+     74.1,
+     68.1
+    ]
+   },
+   {
+    "bbox_id": 141,
+    "label": "regulatory--keep-right--g2",
+    "bbox": [
+     1680.6,
+     1663.9,
+     20.7,
+     21.5
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000086.jpg",
+  "width": 3200,
+  "height": 2400,
+  "labels": [
+   {
+    "bbox_id": 211,
+    "label": "warning--bus-stop-ahead--g3",
+    "bbox": [
+     1399.2,
+     1341.2,
+     14.1,
+     16.4
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000115.jpg",
+  "width": 1920,
+  "height": 1080,
+  "labels": [
+   {
+    "bbox_id": 266,
+    "label": "complementary--chevron-left--g1",
+    "bbox": [
+     1602.7,
+     601.2,
+     113.0,
+     137.1
+    ]
+   },
+   {
+    "bbox_id": 267,
+    "label": "regulatory--no-bicycles--g1",
+    "bbox": [
+     1112.8,
+     756.2,
+     40.8,
+     21.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000120.jpg",
+  "width": 4032,
+  "height": 2268,
+  "labels": [
+   {
+    "bbox_id": 285,
+    "label": "complementary--priority-route-at-intersection--g1",
+    "bbox": [
+     1226.5,
+     988.9,
+     48.2,
+     68.7
+    ]
+   },
+   {
+    "bbox_id": 286,
+    "label": "warning--domestic-animals--g1",
+    "bbox": [
+     1692.1,
+     1037.7,
+     19.7,
+     19.4
+    ]
+   },
+   {
+    "bbox_id": 287,
+    "label": "regulatory--no-entry--g1",
+    "bbox": [
+     1963.8,
+     1047.1,
+     24.6,
+     23.3
+    ]
+   },
+   {
+    "bbox_id": 289,
+    "label": "warning--winding-road-first-left--g1",
+    "bbox": [
+     1812.2,
+     1022.2,
+     12.8,
+     14.4
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000134.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 310,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     2400.9,
+     1335.6,
+     27.6,
+     26.6
+    ]
+   },
+   {
+    "bbox_id": 311,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     1997.3,
+     1361.4,
+     25.6,
+     25.1
+    ]
+   },
+   {
+    "bbox_id": 312,
+    "label": "warning--traffic-merges-left--g1",
+    "bbox": [
+     2876.3,
+     1080.8,
+     138.8,
+     129.9
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000151.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 340,
+    "label": "warning--curve-left--g2",
+    "bbox": [
+     743.5,
+     1443.9,
+     56.6,
+     78.3
+    ]
+   },
+   {
+    "bbox_id": 341,
+    "label": "complementary--except-bicycles--g1",
+    "bbox": [
+     1821.7,
+     1496.5,
+     33.5,
+     70.5
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000152.jpg",
+  "width": 5312,
+  "height": 2988,
+  "labels": [
+   {
+    "bbox_id": 343,
+    "label": "warning--curve-right--g2",
+    "bbox": [
+     2898.5,
+     1631.1,
+     201.0,
+     186.8
+    ]
+   },
+   {
+    "bbox_id": 346,
+    "label": "warning--road-narrows--g2",
+    "bbox": [
+     2440.7,
+     2148.4,
+     31.1,
+     33.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000155.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 350,
+    "label": "regulatory--maximum-speed-limit-120--g1",
+    "bbox": [
+     2712.0,
+     1771.9,
+     48.2,
+     39.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000173.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 378,
+    "label": "warning--curve-left--g2",
+    "bbox": [
+     2081.0,
+     1952.0,
+     40.4,
+     41.3
+    ]
+   },
+   {
+    "bbox_id": 379,
+    "label": "warning--curve-right--g2",
+    "bbox": [
+     2408.8,
+     1916.6,
+     55.1,
+     46.5
+    ]
+   },
+   {
+    "bbox_id": 380,
+    "label": "information--minimum-speed-40--g1",
+    "bbox": [
+     3658.9,
+     1509.0,
+     359.3,
+     361.8
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000191.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 435,
+    "label": "regulatory--keep-right--g6",
+    "bbox": [
+     2020.1,
+     1084.1,
+     29.5,
+     38.2
+    ]
+   },
+   {
+    "bbox_id": 436,
+    "label": "warning--school-zone--g2",
+    "bbox": [
+     2032.0,
+     925.2,
+     34.3,
+     39.4
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000200.jpg",
+  "width": 1920,
+  "height": 1080,
+  "labels": [
+   {
+    "bbox_id": 459,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     1350.9,
+     361.8,
+     43.1,
+     46.7
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000212.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 486,
+    "label": "warning--railroad-intersection--g4",
+    "bbox": [
+     2201.0,
+     1348.3,
+     114.8,
+     132.7
+    ]
+   },
+   {
+    "bbox_id": 487,
+    "label": "warning--railroad-intersection--g4",
+    "bbox": [
+     1585.8,
+     1600.5,
+     43.0,
+     46.0
+    ]
+   },
+   {
+    "bbox_id": 489,
+    "label": "warning--junction-with-a-side-road-acute-left--g1",
+    "bbox": [
+     1640.0,
+     1469.0,
+     71.7,
+     18.5
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000234.jpg",
+  "width": 1920,
+  "height": 1080,
+  "labels": [
+   {
+    "bbox_id": 537,
+    "label": "regulatory--turn-right--g3",
+    "bbox": [
+     896.7,
+     795.8,
+     26.2,
+     25.8
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000235.jpg",
+  "width": 1920,
+  "height": 1080,
+  "labels": [
+   {
+    "bbox_id": 540,
+    "label": "regulatory--no-pedestrians--g3",
+    "bbox": [
+     1150.3,
+     466.2,
+     16.9,
+     11.3
+    ]
+   },
+   {
+    "bbox_id": 541,
+    "label": "information--road-bump--g1",
+    "bbox": [
+     1148.9,
+     447.7,
+     18.8,
+     17.7
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000239.jpg",
+  "width": 3840,
+  "height": 2160,
+  "labels": [
+   {
+    "bbox_id": 553,
+    "label": "regulatory--do-not-stop-on-tracks--g1",
+    "bbox": [
+     2357.8,
+     1491.9,
+     26.2,
+     25.3
+    ]
+   },
+   {
+    "bbox_id": 554,
+    "label": "regulatory--maximum-speed-limit-20--g1",
+    "bbox": [
+     2343.8,
+     1432.8,
+     51.6,
+     60.6
+    ]
+   },
+   {
+    "bbox_id": 555,
+    "label": "regulatory--no-overtaking--g2",
+    "bbox": [
+     2148.8,
+     1488.7,
+     30.9,
+     26.4
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000242.jpg",
+  "width": 4160,
+  "height": 2340,
+  "labels": [
+   {
+    "bbox_id": 561,
+    "label": "warning--railroad-intersection--g3",
+    "bbox": [
+     1021.7,
+     1016.9,
+     78.2,
+     80.0
+    ]
+   },
+   {
+    "bbox_id": 562,
+    "label": "warning--railroad-intersection--g3",
+    "bbox": [
+     2602.0,
+     1066.0,
+     81.2,
+     78.3
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000260.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 590,
+    "label": "regulatory--maximum-speed-limit-120--g1",
+    "bbox": [
+     3050.6,
+     1793.3,
+     171.3,
+     152.8
+    ]
+   },
+   {
+    "bbox_id": 591,
+    "label": "warning--winding-road-first-left--g1",
+    "bbox": [
+     2318.2,
+     2045.0,
+     19.7,
+     34.7
+    ]
+   },
+   {
+    "bbox_id": 592,
+    "label": "warning--winding-road-first-left--g1",
+    "bbox": [
+     1888.0,
+     2011.1,
+     32.5,
+     47.2
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000264.jpg",
+  "width": 4032,
+  "height": 2268,
+  "labels": [
+   {
+    "bbox_id": 599,
+    "label": "regulatory--do-not-stop-on-tracks--g1",
+    "bbox": [
+     1472.6,
+     962.3,
+     119.1,
+     79.2
+    ]
+   },
+   {
+    "bbox_id": 600,
+    "label": "regulatory--dual-lanes-go-straight-on-right--g1",
+    "bbox": [
+     1457.9,
+     814.0,
+     157.5,
+     155.0
+    ]
+   },
+   {
+    "bbox_id": 601,
+    "label": "complementary--pass-right--g1",
+    "bbox": [
+     2266.0,
+     1225.9,
+     44.3,
+     57.0
+    ]
+   },
+   {
+    "bbox_id": 604,
+    "label": "complementary--pass-right--g1",
+    "bbox": [
+     2348.7,
+     1262.5,
+     33.5,
+     160.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000272.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 618,
+    "label": "regulatory--maximum-speed-limit-10--g1",
+    "bbox": [
+     2830.1,
+     1740.9,
+     96.5,
+     102.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000289.jpg",
+  "width": 2592,
+  "height": 1944,
+  "labels": [
+   {
+    "bbox_id": 646,
+    "label": "warning--curve-right--g2",
+    "bbox": [
+     891.0,
+     646.4,
+     34.2,
+     28.0
+    ]
+   },
+   {
+    "bbox_id": 647,
+    "label": "warning--curve-right--g2",
+    "bbox": [
+     1382.7,
+     628.4,
+     27.2,
+     29.9
+    ]
+   },
+   {
+    "bbox_id": 650,
+    "label": "regulatory--no-motor-vehicles--g4",
+    "bbox": [
+     1060.6,
+     700.0,
+     24.0,
+     21.8
+    ]
+   },
+   {
+    "bbox_id": 651,
+    "label": "warning--y-roads--g1",
+    "bbox": [
+     1385.9,
+     660.7,
+     24.0,
+     24.2
+    ]
+   },
+   {
+    "bbox_id": 652,
+    "label": "warning--y-roads--g1",
+    "bbox": [
+     896.7,
+     679.6,
+     24.0,
+     24.2
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000291.jpg",
+  "width": 4048,
+  "height": 3036,
+  "labels": [
+   {
+    "bbox_id": 658,
+    "label": "regulatory--no-straight-through--g1",
+    "bbox": [
+     2382.7,
+     1440.9,
+     122.5,
+     122.3
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000300.jpg",
+  "width": 5248,
+  "height": 3936,
+  "labels": [
+   {
+    "bbox_id": 678,
+    "label": "regulatory--no-overtaking--g2",
+    "bbox": [
+     2138.4,
+     1560.6,
+     116.6,
+     105.7
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000302.jpg",
+  "width": 2560,
+  "height": 1920,
+  "labels": [
+   {
+    "bbox_id": 682,
+    "label": "complementary--chevron-right--g3",
+    "bbox": [
+     763.8,
+     908.4,
+     178.1,
+     178.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000330.jpg",
+  "width": 4128,
+  "height": 3096,
+  "labels": [
+   {
+    "bbox_id": 736,
+    "label": "warning--horizontal-alignment-left--g1",
+    "bbox": [
+     646.0,
+     1322.8,
+     74.6,
+     83.1
+    ]
+   },
+   {
+    "bbox_id": 737,
+    "label": "warning--bus-stop-ahead--g3",
+    "bbox": [
+     1390.8,
+     1607.0,
+     53.4,
+     52.9
+    ]
+   },
+   {
+    "bbox_id": 738,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     1218.4,
+     1826.9,
+     40.3,
+     49.1
+    ]
+   },
+   {
+    "bbox_id": 739,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     1714.3,
+     1831.4,
+     28.2,
+     44.6
+    ]
+   },
+   {
+    "bbox_id": 740,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     114.9,
+     1814.8,
+     36.3,
+     37.8
+    ]
+   },
+   {
+    "bbox_id": 743,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     928.2,
+     1800.5,
+     48.4,
+     55.9
+    ]
+   },
+   {
+    "bbox_id": 744,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     1471.4,
+     1623.6,
+     56.4,
+     64.2
+    ]
+   },
+   {
+    "bbox_id": 745,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     1602.4,
+     1811.8,
+     53.4,
+     55.9
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000332.jpg",
+  "width": 4000,
+  "height": 3000,
+  "labels": [
+   {
+    "bbox_id": 747,
+    "label": "complementary--pass-right--g1",
+    "bbox": [
+     2284.2,
+     1760.7,
+     142.6,
+     196.3
+    ]
+   },
+   {
+    "bbox_id": 748,
+    "label": "warning--trail-crossing--g2",
+    "bbox": [
+     3594.7,
+     1824.5,
+     40.0,
+     34.4
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000341.jpg",
+  "width": 1920,
+  "height": 1080,
+  "labels": [
+   {
+    "bbox_id": 763,
+    "label": "complementary--maximum-speed-limit-30--g1",
+    "bbox": [
+     562.5,
+     641.2,
+     121.4,
+     79.1
+    ]
+   },
+   {
+    "bbox_id": 764,
+    "label": "warning--falling-rocks-or-debris-right--g1",
+    "bbox": [
+     572.3,
+     535.3,
+     118.6,
+     98.9
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000347.jpg",
+  "width": 4128,
+  "height": 3096,
+  "labels": [
+   {
+    "bbox_id": 777,
+    "label": "regulatory--one-way-left--g1",
+    "bbox": [
+     1996.5,
+     1122.5,
+     89.7,
+     43.1
+    ]
+   },
+   {
+    "bbox_id": 778,
+    "label": "warning--double-curve-first-left--g2",
+    "bbox": [
+     4042.3,
+     1253.2,
+     56.4,
+     50.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000349.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 781,
+    "label": "regulatory--end-of-bicycles-only--g1",
+    "bbox": [
+     2682.3,
+     1563.5,
+     93.2,
+     118.3
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000351.jpg",
+  "width": 4128,
+  "height": 3096,
+  "labels": [
+   {
+    "bbox_id": 784,
+    "label": "complementary--one-direction-left--g1",
+    "bbox": [
+     2092.2,
+     1245.7,
+     115.9,
+     105.1
+    ]
+   },
+   {
+    "bbox_id": 785,
+    "label": "warning--railroad-crossing-without-barriers--g4",
+    "bbox": [
+     1999.5,
+     1393.8,
+     27.2,
+     26.5
+    ]
+   },
+   {
+    "bbox_id": 787,
+    "label": "warning--railroad-crossing-without-barriers--g1",
+    "bbox": [
+     2958.9,
+     1330.3,
+     61.5,
+     52.9
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000376.jpg",
+  "width": 5248,
+  "height": 3936,
+  "labels": [
+   {
+    "bbox_id": 834,
+    "label": "complementary--obstacle-delineator--g2",
+    "bbox": [
+     3255.7,
+     1995.9,
+     51.2,
+     49.0
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000391.jpg",
+  "width": 1920,
+  "height": 1080,
+  "labels": [
+   {
+    "bbox_id": 886,
+    "label": "complementary--tow-away-zone--g1",
+    "bbox": [
+     633.3,
+     816.6,
+     24.8,
+     27.7
+    ]
+   },
+   {
+    "bbox_id": 887,
+    "label": "regulatory--turn-right--g3",
+    "bbox": [
+     1379.5,
+     615.1,
+     88.6,
+     110.5
+    ]
+   },
+   {
+    "bbox_id": 888,
+    "label": "regulatory--no-motor-vehicles-except-motorcycles--g2",
+    "bbox": [
+     1116.1,
+     814.0,
+     30.5,
+     31.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000399.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 915,
+    "label": "complementary--pass-right--g1",
+    "bbox": [
+     3348.8,
+     2088.6,
+     139.8,
+     183.8
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000405.jpg",
+  "width": 4608,
+  "height": 3456,
+  "labels": [
+   {
+    "bbox_id": 931,
+    "label": "complementary--keep-left--g1",
+    "bbox": [
+     1702.1,
+     2134.7,
+     150.8,
+     55.7
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000406.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 934,
+    "label": "complementary--trucks-turn-right--g1",
+    "bbox": [
+     1749.2,
+     2185.3,
+     10.8,
+     25.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000409.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 938,
+    "label": "complementary--except-bicycles--g1",
+    "bbox": [
+     1661.6,
+     2079.0,
+     69.9,
+     81.2
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000415.jpg",
+  "width": 4000,
+  "height": 3000,
+  "labels": [
+   {
+    "bbox_id": 952,
+    "label": "regulatory--maximum-speed-limit-100--g1",
+    "bbox": [
+     2079.1,
+     1344.0,
+     32.2,
+     38.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000424.jpg",
+  "width": 2048,
+  "height": 1152,
+  "labels": [
+   {
+    "bbox_id": 963,
+    "label": "warning--road-narrows--g2",
+    "bbox": [
+     1894.5,
+     305.2,
+     87.5,
+     85.5
+    ]
+   },
+   {
+    "bbox_id": 965,
+    "label": "warning--curve-right--g2",
+    "bbox": [
+     1323.0,
+     400.2,
+     16.5,
+     12.4
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000436.jpg",
+  "width": 4128,
+  "height": 3096,
+  "labels": [
+   {
+    "bbox_id": 993,
+    "label": "regulatory--no-pedestrians--g3",
+    "bbox": [
+     2600.2,
+     1693.1,
+     39.3,
+     19.7
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000441.jpg",
+  "width": 2560,
+  "height": 1920,
+  "labels": [
+   {
+    "bbox_id": 1000,
+    "label": "warning--curve-left--g2",
+    "bbox": [
+     1734.4,
+     503.0,
+     201.9,
+     216.6
+    ]
+   },
+   {
+    "bbox_id": 1001,
+    "label": "warning--equestrians-crossing--g2",
+    "bbox": [
+     1773.1,
+     711.1,
+     168.1,
+     160.3
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000458.jpg",
+  "width": 4160,
+  "height": 3120,
+  "labels": [
+   {
+    "bbox_id": 1051,
+    "label": "regulatory--maximum-speed-limit-100--g1",
+    "bbox": [
+     2255.7,
+     1967.5,
+     117.8,
+     128.0
+    ]
+   },
+   {
+    "bbox_id": 1052,
+    "label": "warning--divided-highway-ends--g2",
+    "bbox": [
+     2290.2,
+     2094.0,
+     56.9,
+     60.2
+    ]
+   },
+   {
+    "bbox_id": 1053,
+    "label": "warning--children--g1",
+    "bbox": [
+     1645.3,
+     2126.7,
+     13.2,
+     16.8
+    ]
+   },
+   {
+    "bbox_id": 1054,
+    "label": "warning--children--g1",
+    "bbox": [
+     1596.6,
+     2128.2,
+     13.2,
+     17.5
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000476.jpg",
+  "width": 3264,
+  "height": 1836,
+  "labels": [
+   {
+    "bbox_id": 1084,
+    "label": "warning--roundabout--g25",
+    "bbox": [
+     745.1,
+     909.0,
+     60.6,
+     58.3
+    ]
+   },
+   {
+    "bbox_id": 1086,
+    "label": "information--highway-interstate-route--g2",
+    "bbox": [
+     1922.1,
+     973.1,
+     36.7,
+     37.2
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000478.jpg",
+  "width": 4632,
+  "height": 3474,
+  "labels": [
+   {
+    "bbox_id": 1092,
+    "label": "regulatory--turn-left--g1",
+    "bbox": [
+     3151.7,
+     1692.0,
+     214.9,
+     213.7
+    ]
+   },
+   {
+    "bbox_id": 1093,
+    "label": "complementary--chevron-right--g3",
+    "bbox": [
+     2699.4,
+     1910.0,
+     59.9,
+     58.5
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000500.jpg",
+  "width": 4096,
+  "height": 2160,
+  "labels": [
+   {
+    "bbox_id": 1142,
+    "label": "regulatory--keep-right--g6",
+    "bbox": [
+     1090.0,
+     1703.3,
+     50.0,
+     50.1
+    ]
+   },
+   {
+    "bbox_id": 1143,
+    "label": "warning--roundabout--g25",
+    "bbox": [
+     1149.0,
+     1755.5,
+     44.0,
+     43.8
+    ]
+   },
+   {
+    "bbox_id": 1144,
+    "label": "warning--road-narrows--g1",
+    "bbox": [
+     1031.0,
+     1706.0,
+     54.0,
+     51.7
+    ]
+   },
+   {
+    "bbox_id": 1145,
+    "label": "regulatory--no-parking-or-no-stopping--g1",
+    "bbox": [
+     1148.0,
+     1699.1,
+     46.0,
+     50.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000509.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 1163,
+    "label": "warning--turn-right--g1",
+    "bbox": [
+     1832.8,
+     1320.8,
+     63.0,
+     62.8
+    ]
+   },
+   {
+    "bbox_id": 1164,
+    "label": "warning--junction-with-a-side-road-perpendicular-right--g3",
+    "bbox": [
+     2129.2,
+     1311.9,
+     86.1,
+     78.9
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000540.jpg",
+  "width": 1280,
+  "height": 720,
+  "labels": [
+   {
+    "bbox_id": 1215,
+    "label": "warning--bus-stop-ahead--g3",
+    "bbox": [
+     713.8,
+     254.4,
+     20.6,
+     21.6
+    ]
+   },
+   {
+    "bbox_id": 1217,
+    "label": "regulatory--roundabout--g1",
+    "bbox": [
+     1169.4,
+     225.2,
+     43.4,
+     23.7
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000548.jpg",
+  "width": 4128,
+  "height": 3096,
+  "labels": [
+   {
+    "bbox_id": 1237,
+    "label": "regulatory--road-closed-to-vehicles--g1",
+    "bbox": [
+     2239.4,
+     1573.7,
+     51.4,
+     55.2
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000551.jpg",
+  "width": 4608,
+  "height": 2592,
+  "labels": [
+   {
+    "bbox_id": 1250,
+    "label": "warning--horizontal-alignment-right--g1",
+    "bbox": [
+     2576.2,
+     2001.0,
+     37.1,
+     35.4
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000552.jpg",
+  "width": 1920,
+  "height": 1080,
+  "labels": [
+   {
+    "bbox_id": 1251,
+    "label": "warning--curve-right--g2",
+    "bbox": [
+     1129.2,
+     660.5,
+     20.2,
+     19.5
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000594.jpg",
+  "width": 1280,
+  "height": 768,
+  "labels": [
+   {
+    "bbox_id": 1324,
+    "label": "warning--domestic-animals--g1",
+    "bbox": [
+     176.2,
+     302.2,
+     16.6,
+     17.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000601.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 1334,
+    "label": "regulatory--shared-path-pedestrians-and-bicycles--g1",
+    "bbox": [
+     1698.1,
+     1727.8,
+     31.1,
+     32.3
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000613.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 1352,
+    "label": "warning--falling-rocks-or-debris-right--g1",
+    "bbox": [
+     622.1,
+     1207.1,
+     270.7,
+     251.0
+    ]
+   },
+   {
+    "bbox_id": 1353,
+    "label": "complementary--maximum-speed-limit-30--g1",
+    "bbox": [
+     638.9,
+     1457.4,
+     200.8,
+     118.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000653.jpg",
+  "width": 1920,
+  "height": 1080,
+  "labels": [
+   {
+    "bbox_id": 1427,
+    "label": "regulatory--no-entry--g1",
+    "bbox": [
+     1397.3,
+     239.7,
+     135.9,
+     126.8
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000658.jpg",
+  "width": 4128,
+  "height": 3096,
+  "labels": [
+   {
+    "bbox_id": 1445,
+    "label": "information--stairs--g1",
+    "bbox": [
+     3172.6,
+     1814.8,
+     26.2,
+     40.8
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000661.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 1450,
+    "label": "regulatory--no-overtaking--g2",
+    "bbox": [
+     2159.7,
+     2052.4,
+     47.2,
+     51.7
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000665.jpg",
+  "width": 3264,
+  "height": 1836,
+  "labels": [
+   {
+    "bbox_id": 1455,
+    "label": "complementary--maximum-speed-limit-30--g1",
+    "bbox": [
+     710.8,
+     1112.1,
+     94.0,
+     60.1
+    ]
+   },
+   {
+    "bbox_id": 1456,
+    "label": "complementary--maximum-speed-limit-30--g1",
+    "bbox": [
+     1869.5,
+     1119.3,
+     82.9,
+     52.9
+    ]
+   },
+   {
+    "bbox_id": 1457,
+    "label": "warning--children--g1",
+    "bbox": [
+     1566.7,
+     1123.3,
+     22.3,
+     28.7
+    ]
+   },
+   {
+    "bbox_id": 1458,
+    "label": "regulatory--maximum-speed-limit-100--g1",
+    "bbox": [
+     700.5,
+     982.1,
+     125.1,
+     121.5
+    ]
+   },
+   {
+    "bbox_id": 1459,
+    "label": "regulatory--maximum-speed-limit-100--g1",
+    "bbox": [
+     1855.9,
+     992.9,
+     117.1,
+     117.9
+    ]
+   },
+   {
+    "bbox_id": 1460,
+    "label": "warning--children--g1",
+    "bbox": [
+     1474.2,
+     1119.7,
+     15.1,
+     22.0
+    ]
+   },
+   {
+    "bbox_id": 1461,
+    "label": "warning--children--g1",
+    "bbox": [
+     1205.7,
+     1123.3,
+     10.4,
+     9.4
+    ]
+   },
+   {
+    "bbox_id": 1462,
+    "label": "warning--children--g1",
+    "bbox": [
+     1298.1,
+     1121.5,
+     12.0,
+     13.9
+    ]
+   },
+   {
+    "bbox_id": 1463,
+    "label": "warning--children--g1",
+    "bbox": [
+     1385.8,
+     1121.5,
+     12.8,
+     16.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000670.jpg",
+  "width": 4656,
+  "height": 3488,
+  "labels": [
+   {
+    "bbox_id": 1480,
+    "label": "warning--flaggers-in-road--g1",
+    "bbox": [
+     2879.3,
+     1059.3,
+     125.0,
+     121.8
+    ]
+   },
+   {
+    "bbox_id": 1481,
+    "label": "warning--flaggers-in-road--g1",
+    "bbox": [
+     1522.1,
+     1044.0,
+     126.2,
+     116.7
+    ]
+   },
+   {
+    "bbox_id": 1483,
+    "label": "regulatory--no-motor-vehicle-trailers--g1",
+    "bbox": [
+     2633.8,
+     1120.7,
+     115.9,
+     109.0
+    ]
+   },
+   {
+    "bbox_id": 1484,
+    "label": "regulatory--no-motor-vehicle-trailers--g1",
+    "bbox": [
+     1341.3,
+     1074.7,
+     85.3,
+     116.7
+    ]
+   },
+   {
+    "bbox_id": 1485,
+    "label": "warning--railroad-intersection--g4",
+    "bbox": [
+     2892.9,
+     1173.5,
+     71.6,
+     95.4
+    ]
+   },
+   {
+    "bbox_id": 1486,
+    "label": "warning--traffic-merges-left--g2",
+    "bbox": [
+     2649.7,
+     1224.5,
+     84.1,
+     48.5
+    ]
+   },
+   {
+    "bbox_id": 1487,
+    "label": "warning--railroad-intersection--g4",
+    "bbox": [
+     2438.3,
+     1354.8,
+     23.9,
+     26.4
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000679.jpg",
+  "width": 4032,
+  "height": 3024,
+  "labels": [
+   {
+    "bbox_id": 1503,
+    "label": "complementary--both-directions--g1",
+    "bbox": [
+     1344.7,
+     2073.8,
+     24.6,
+     24.4
+    ]
+   },
+   {
+    "bbox_id": 1504,
+    "label": "complementary--both-directions--g1",
+    "bbox": [
+     1488.4,
+     2079.0,
+     29.5,
+     28.1
+    ]
+   },
+   {
+    "bbox_id": 1505,
+    "label": "complementary--both-directions--g1",
+    "bbox": [
+     1670.5,
+     2087.9,
+     37.4,
+     37.7
+    ]
+   },
+   {
+    "bbox_id": 1506,
+    "label": "complementary--both-directions--g1",
+    "bbox": [
+     1940.2,
+     2082.0,
+     54.1,
+     57.6
+    ]
+   },
+   {
+    "bbox_id": 1508,
+    "label": "complementary--both-directions--g1",
+    "bbox": [
+     2663.7,
+     2053.9,
+     138.8,
+     144.0
+    ]
+   },
+   {
+    "bbox_id": 1510,
+    "label": "warning--road-narrows--g2",
+    "bbox": [
+     1828.0,
+     2053.9,
+     40.4,
+     40.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000680.jpg",
+  "width": 4128,
+  "height": 3096,
+  "labels": [
+   {
+    "bbox_id": 1511,
+    "label": "regulatory--mopeds-and-bicycles-only--g1",
+    "bbox": [
+     1675.0,
+     1411.2,
+     84.7,
+     83.1
+    ]
+   },
+   {
+    "bbox_id": 1512,
+    "label": "warning--road-bump--g2",
+    "bbox": [
+     1672.0,
+     1539.7,
+     83.6,
+     83.9
+    ]
+   },
+   {
+    "bbox_id": 1513,
+    "label": "regulatory--turn-right--g3",
+    "bbox": [
+     1657.9,
+     1597.9,
+     38.3,
+     42.3
+    ]
+   },
+   {
+    "bbox_id": 1514,
+    "label": "information--parking--g6",
+    "bbox": [
+     1671.0,
+     1492.8,
+     82.6,
+     47.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000701.jpg",
+  "width": 4000,
+  "height": 3000,
+  "labels": [
+   {
+    "bbox_id": 1557,
+    "label": "warning--railroad-crossing-without-barriers--g3",
+    "bbox": [
+     1762.7,
+     1907.2,
+     31.2,
+     30.0
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000710.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 1587,
+    "label": "warning--double-curve-first-left--g1",
+    "bbox": [
+     1998.6,
+     1116.4,
+     78.1,
+     46.0
+    ]
+   },
+   {
+    "bbox_id": 1588,
+    "label": "warning--steep-ascent--g7",
+    "bbox": [
+     1730.8,
+     1163.0,
+     27.1,
+     23.3
+    ]
+   },
+   {
+    "bbox_id": 1589,
+    "label": "complementary--maximum-speed-limit-20--g1",
+    "bbox": [
+     2062.3,
+     1108.7,
+     44.6,
+     56.2
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000711.jpg",
+  "width": 5312,
+  "height": 2988,
+  "labels": [
+   {
+    "bbox_id": 1590,
+    "label": "warning--curve-left--g2",
+    "bbox": [
+     2648.2,
+     2195.0,
+     33.7,
+     34.3
+    ]
+   },
+   {
+    "bbox_id": 1591,
+    "label": "warning--double-curve-first-left--g2",
+    "bbox": [
+     2855.7,
+     2153.5,
+     23.3,
+     26.3
+    ]
+   },
+   {
+    "bbox_id": 1592,
+    "label": "complementary--maximum-speed-limit-20--g1",
+    "bbox": [
+     1781.9,
+     2160.0,
+     32.4,
+     36.5
+    ]
+   },
+   {
+    "bbox_id": 1593,
+    "label": "warning--double-curve-first-left--g2",
+    "bbox": [
+     2287.7,
+     2230.1,
+     23.3,
+     25.5
+    ]
+   },
+   {
+    "bbox_id": 1594,
+    "label": "complementary--priority-route-at-intersection--g1",
+    "bbox": [
+     1404.5,
+     2394.2,
+     35.0,
+     37.9
+    ]
+   },
+   {
+    "bbox_id": 1595,
+    "label": "regulatory--mopeds-and-bicycles-only--g1",
+    "bbox": [
+     1268.3,
+     2202.3,
+     98.6,
+     106.5
+    ]
+   },
+   {
+    "bbox_id": 1596,
+    "label": "warning--curve-right--g2",
+    "bbox": [
+     1259.3,
+     2078.3,
+     93.4,
+     125.5
+    ]
+   },
+   {
+    "bbox_id": 1597,
+    "label": "warning--curve-left--g2",
+    "bbox": [
+     2340.9,
+     2228.6,
+     37.6,
+     35.7
+    ]
+   },
+   {
+    "bbox_id": 1598,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     1560.1,
+     2327.1,
+     20.8,
+     23.3
+    ]
+   },
+   {
+    "bbox_id": 1599,
+    "label": "complementary--one-direction-right--g1",
+    "bbox": [
+     2605.4,
+     2099.5,
+     33.7,
+     33.6
+    ]
+   },
+   {
+    "bbox_id": 1600,
+    "label": "complementary--except-bicycles--g1",
+    "bbox": [
+     974.0,
+     2374.5,
+     37.6,
+     39.4
+    ]
+   },
+   {
+    "bbox_id": 1601,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     2289.0,
+     2258.5,
+     23.3,
+     24.8
+    ]
+   },
+   {
+    "bbox_id": 1602,
+    "label": "information--gas-station--g3",
+    "bbox": [
+     1280.0,
+     2359.2,
+     23.3,
+     24.1
+    ]
+   },
+   {
+    "bbox_id": 1603,
+    "label": "warning--traffic-signals--g4",
+    "bbox": [
+     2897.2,
+     2169.5,
+     36.3,
+     37.9
+    ]
+   },
+   {
+    "bbox_id": 1604,
+    "label": "warning--pedestrians-crossing--g12",
+    "bbox": [
+     1883.1,
+     2304.5,
+     27.2,
+     29.2
+    ]
+   },
+   {
+    "bbox_id": 1605,
+    "label": "information--gas-station--g3",
+    "bbox": [
+     1204.8,
+     2376.0,
+     13.0,
+     16.8
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000714.jpg",
+  "width": 3984,
+  "height": 2988,
+  "labels": [
+   {
+    "bbox_id": 1611,
+    "label": "complementary--maximum-speed-limit-75--g1",
+    "bbox": [
+     1341.3,
+     1896.7,
+     23.3,
+     24.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000733.jpg",
+  "width": 3264,
+  "height": 2448,
+  "labels": [
+   {
+    "bbox_id": 1640,
+    "label": "complementary--maximum-speed-limit-20--g1",
+    "bbox": [
+     1314.8,
+     1026.2,
+     86.9,
+     147.6
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000740.jpg",
+  "width": 3984,
+  "height": 2988,
+  "labels": [
+   {
+    "bbox_id": 1650,
+    "label": "regulatory--maximum-speed-limit-40--g3",
+    "bbox": [
+     3020.1,
+     1948.5,
+     59.3,
+     67.8
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000743.jpg",
+  "width": 4032,
+  "height": 2268,
+  "labels": [
+   {
+    "bbox_id": 1658,
+    "label": "complementary--maximum-speed-limit-20--g1",
+    "bbox": [
+     3245.5,
+     943.0,
+     76.8,
+     104.7
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000745.jpg",
+  "width": 2560,
+  "height": 1920,
+  "labels": [
+   {
+    "bbox_id": 1660,
+    "label": "regulatory--maximum-speed-limit-100--g1",
+    "bbox": [
+     1470.6,
+     1045.8,
+     45.0,
+     45.9
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000773.jpg",
+  "width": 3984,
+  "height": 2988,
+  "labels": [
+   {
+    "bbox_id": 1741,
+    "label": "complementary--distance--g2",
+    "bbox": [
+     3697.1,
+     1281.0,
+     201.3,
+     185.3
+    ]
+   },
+   {
+    "bbox_id": 1742,
+    "label": "complementary--maximum-speed-limit-40--g1",
+    "bbox": [
+     3298.3,
+     1798.9,
+     36.0,
+     39.4
+    ]
+   },
+   {
+    "bbox_id": 1743,
+    "label": "information--dead-end--g1",
+    "bbox": [
+     3736.0,
+     1466.3,
+     147.8,
+     51.1
+    ]
+   }
+  ]
+ },
+ {
+  "image": "000775.jpg",
+  "width": 4608,
+  "height": 3456,
+  "labels": [
+   {
+    "bbox_id": 1746,
+    "label": "regulatory--maximum-speed-limit-led-80--g1",
+    "bbox": [
+     637.9,
+     1533.1,
+     128.2,
+     135.0
+    ]
+   },
+   {
+    "bbox_id": 1747,
+    "label": "complementary--maximum-speed-limit-20--g1",
+    "bbox": [
+     2457.0,
+     1685.8,
+     33.8,
+     41.3
+    ]
+   }
+  ]
+ }
+]

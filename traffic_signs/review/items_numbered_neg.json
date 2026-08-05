@@ -1,0 +1,374 @@
+[
+ {
+  "id": 600,
+  "image": "000037.jpg",
+  "bbox_id": 100,
+  "label": "regulatory--height-limit--g1"
+ },
+ {
+  "id": 601,
+  "image": "000044.jpg",
+  "bbox_id": 111,
+  "label": "complementary--distance--g3"
+ },
+ {
+  "id": 602,
+  "image": "000162.jpg",
+  "bbox_id": 364,
+  "label": "complementary--distance--g3"
+ },
+ {
+  "id": 603,
+  "image": "000164.jpg",
+  "bbox_id": 366,
+  "label": "regulatory--minimum-safe-distance--g1"
+ },
+ {
+  "id": 604,
+  "image": "000206.jpg",
+  "bbox_id": 466,
+  "label": "regulatory--weight-limit-with-trucks--g1"
+ },
+ {
+  "id": 605,
+  "image": "000278.jpg",
+  "bbox_id": 627,
+  "label": "regulatory--weight-limit-with-trucks--g1"
+ },
+ {
+  "id": 606,
+  "image": "000301.jpg",
+  "bbox_id": 680,
+  "label": "complementary--distance--g3"
+ },
+ {
+  "id": 607,
+  "image": "000305.jpg",
+  "bbox_id": 685,
+  "label": "complementary--distance--g3"
+ },
+ {
+  "id": 608,
+  "image": "000345.jpg",
+  "bbox_id": 772,
+  "label": "complementary--distance--g1"
+ },
+ {
+  "id": 609,
+  "image": "000345.jpg",
+  "bbox_id": 773,
+  "label": "complementary--distance--g1"
+ },
+ {
+  "id": 610,
+  "image": "000345.jpg",
+  "bbox_id": 774,
+  "label": "complementary--distance--g1"
+ },
+ {
+  "id": 611,
+  "image": "000379.jpg",
+  "bbox_id": 841,
+  "label": "information--interstate-route--g1"
+ },
+ {
+  "id": 612,
+  "image": "000451.jpg",
+  "bbox_id": 1027,
+  "label": "complementary--distance--g3"
+ },
+ {
+  "id": 613,
+  "image": "000497.jpg",
+  "bbox_id": 1132,
+  "label": "complementary--distance--g2"
+ },
+ {
+  "id": 614,
+  "image": "000511.jpg",
+  "bbox_id": 1166,
+  "label": "complementary--distance--g2"
+ },
+ {
+  "id": 615,
+  "image": "000561.jpg",
+  "bbox_id": 1265,
+  "label": "regulatory--height-limit--g1"
+ },
+ {
+  "id": 616,
+  "image": "000629.jpg",
+  "bbox_id": 1373,
+  "label": "complementary--distance--g3"
+ },
+ {
+  "id": 617,
+  "image": "000641.jpg",
+  "bbox_id": 1390,
+  "label": "complementary--distance--g3"
+ },
+ {
+  "id": 618,
+  "image": "000656.jpg",
+  "bbox_id": 1441,
+  "label": "warning--height-restriction--g2"
+ },
+ {
+  "id": 619,
+  "image": "000713.jpg",
+  "bbox_id": 1610,
+  "label": "information--highway-interstate-route--g2"
+ },
+ {
+  "id": 620,
+  "image": "000757.jpg",
+  "bbox_id": 1695,
+  "label": "complementary--distance--g2"
+ },
+ {
+  "id": 621,
+  "image": "000761.jpg",
+  "bbox_id": 1708,
+  "label": "information--highway-interstate-route--g2"
+ },
+ {
+  "id": 622,
+  "image": "000761.jpg",
+  "bbox_id": 1709,
+  "label": "information--highway-interstate-route--g2"
+ },
+ {
+  "id": 623,
+  "image": "000770.jpg",
+  "bbox_id": 1737,
+  "label": "complementary--distance--g2"
+ },
+ {
+  "id": 624,
+  "image": "000799.jpg",
+  "bbox_id": 1803,
+  "label": "regulatory--weight-limit-with-trucks--g1"
+ },
+ {
+  "id": 625,
+  "image": "000815.jpg",
+  "bbox_id": 1843,
+  "label": "regulatory--minimum-safe-distance--g1"
+ },
+ {
+  "id": 626,
+  "image": "000821.jpg",
+  "bbox_id": 1858,
+  "label": "complementary--distance--g3"
+ },
+ {
+  "id": 627,
+  "image": "000885.jpg",
+  "bbox_id": 2007,
+  "label": "regulatory--weight-limit-with-trucks--g1"
+ },
+ {
+  "id": 628,
+  "image": "000895.jpg",
+  "bbox_id": 2041,
+  "label": "warning--height-restriction--g2"
+ },
+ {
+  "id": 629,
+  "image": "000895.jpg",
+  "bbox_id": 2043,
+  "label": "warning--height-restriction--g2"
+ },
+ {
+  "id": 630,
+  "image": "000913.jpg",
+  "bbox_id": 2087,
+  "label": "warning--height-restriction--g2"
+ },
+ {
+  "id": 631,
+  "image": "000916.jpg",
+  "bbox_id": 2103,
+  "label": "warning--height-restriction--g2"
+ },
+ {
+  "id": 632,
+  "image": "000991.jpg",
+  "bbox_id": 2317,
+  "label": "warning--height-restriction--g2"
+ },
+ {
+  "id": 633,
+  "image": "001021.jpg",
+  "bbox_id": 2390,
+  "label": "information--highway-interstate-route--g2"
+ },
+ {
+  "id": 634,
+  "image": "001200.jpg",
+  "bbox_id": 2755,
+  "label": "warning--height-restriction--g2"
+ },
+ {
+  "id": 635,
+  "image": "001200.jpg",
+  "bbox_id": 2756,
+  "label": "warning--height-restriction--g2"
+ },
+ {
+  "id": 636,
+  "image": "001303.jpg",
+  "bbox_id": 3001,
+  "label": "information--highway-interstate-route--g2"
+ },
+ {
+  "id": 637,
+  "image": "001439.jpg",
+  "bbox_id": 3305,
+  "label": "information--highway-interstate-route--g2"
+ },
+ {
+  "id": 638,
+  "image": "001444.jpg",
+  "bbox_id": 3315,
+  "label": "information--interstate-route--g1"
+ },
+ {
+  "id": 639,
+  "image": "001493.jpg",
+  "bbox_id": 3440,
+  "label": "information--highway-interstate-route--g2"
+ },
+ {
+  "id": 640,
+  "image": "001495.jpg",
+  "bbox_id": 3446,
+  "label": "information--highway-interstate-route--g2"
+ },
+ {
+  "id": 641,
+  "image": "001626.jpg",
+  "bbox_id": 3728,
+  "label": "complementary--distance--g2"
+ },
+ {
+  "id": 642,
+  "image": "001714.jpg",
+  "bbox_id": 3933,
+  "label": "information--interstate-route--g1"
+ },
+ {
+  "id": 643,
+  "image": "002129.jpg",
+  "bbox_id": 4905,
+  "label": "complementary--distance--g2"
+ },
+ {
+  "id": 644,
+  "image": "002196.jpg",
+  "bbox_id": 5036,
+  "label": "information--highway-exit--g1"
+ },
+ {
+  "id": 645,
+  "image": "002203.jpg",
+  "bbox_id": 5046,
+  "label": "complementary--distance--g1"
+ },
+ {
+  "id": 646,
+  "image": "002343.jpg",
+  "bbox_id": 5381,
+  "label": "regulatory--weight-limit-with-trucks--g1"
+ },
+ {
+  "id": 647,
+  "image": "002376.jpg",
+  "bbox_id": 5476,
+  "label": "complementary--distance--g1"
+ },
+ {
+  "id": 648,
+  "image": "002533.jpg",
+  "bbox_id": 5837,
+  "label": "regulatory--height-limit--g1"
+ },
+ {
+  "id": 649,
+  "image": "002603.jpg",
+  "bbox_id": 6000,
+  "label": "regulatory--height-limit--g1"
+ },
+ {
+  "id": 650,
+  "image": "002612.jpg",
+  "bbox_id": 6017,
+  "label": "complementary--distance--g2"
+ },
+ {
+  "id": 651,
+  "image": "002621.jpg",
+  "bbox_id": 6040,
+  "label": "regulatory--minimum-safe-distance--g1"
+ },
+ {
+  "id": 652,
+  "image": "002761.jpg",
+  "bbox_id": 6342,
+  "label": "regulatory--height-limit--g1"
+ },
+ {
+  "id": 653,
+  "image": "002774.jpg",
+  "bbox_id": 6375,
+  "label": "information--highway-exit--g1"
+ },
+ {
+  "id": 654,
+  "image": "002794.jpg",
+  "bbox_id": 6423,
+  "label": "complementary--distance--g2"
+ },
+ {
+  "id": 655,
+  "image": "002816.jpg",
+  "bbox_id": 6481,
+  "label": "regulatory--weight-limit-with-trucks--g1"
+ },
+ {
+  "id": 656,
+  "image": "002882.jpg",
+  "bbox_id": 6655,
+  "label": "information--interstate-route--g1"
+ },
+ {
+  "id": 657,
+  "image": "002980.jpg",
+  "bbox_id": 6878,
+  "label": "regulatory--height-limit--g1"
+ },
+ {
+  "id": 658,
+  "image": "003081.jpg",
+  "bbox_id": 7094,
+  "label": "regulatory--minimum-safe-distance--g1"
+ },
+ {
+  "id": 659,
+  "image": "003223.jpg",
+  "bbox_id": 7405,
+  "label": "information--highway-exit--g1"
+ },
+ {
+  "id": 660,
+  "image": "003369.jpg",
+  "bbox_id": 7730,
+  "label": "regulatory--weight-limit-with-trucks--g1"
+ },
+ {
+  "id": 661,
+  "image": "003521.jpg",
+  "bbox_id": 8070,
+  "label": "regulatory--weight-limit-with-trucks--g1"
+ }
+]

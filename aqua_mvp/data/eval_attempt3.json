@@ -1,0 +1,108 @@
+{
+ "tp": 40,
+ "fp": 0,
+ "fn": 16,
+ "tn": 51,
+ "precision": 1.0,
+ "recall": 0.714,
+ "f1": 0.833,
+ "is_numbered_count": 0,
+ "errors": [
+  {
+   "id": 211,
+   "gt": "regulatory--maximum-speed-limit-70",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 215,
+   "gt": "regulatory--maximum-speed-limit-50",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 220,
+   "gt": "regulatory--maximum-speed-limit-40",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 256,
+   "gt": "regulatory--maximum-speed-limit-50",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 60,
+   "gt": "advisory-30",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 92,
+   "gt": "advisory-75",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 93,
+   "gt": "advisory-75",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 136,
+   "gt": "advisory-20",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 168,
+   "gt": "advisory-65",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 305,
+   "gt": "advisory-30",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 306,
+   "gt": "advisory-30",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 400,
+   "gt": "advisory-95",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 603,
+   "gt": "advisory-60",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 644,
+   "gt": "regulatory-65",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 651,
+   "gt": "advisory-40",
+   "pred": "missed",
+   "kind": "FN"
+  },
+  {
+   "id": 653,
+   "gt": "regulatory-65",
+   "pred": "missed",
+   "kind": "FN"
+  }
+ ]
+}

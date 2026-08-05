@@ -1,0 +1,912 @@
+[
+ {
+  "id": 200,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-20--g1",
+  "proposed": null,
+  "note": "bus stop sign",
+  "image": "001384.jpg",
+  "bbox_id": 3193,
+  "crop": "crop_200.png"
+ },
+ {
+  "id": 201,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001390.jpg",
+  "bbox_id": 3208,
+  "crop": "crop_201.png"
+ },
+ {
+  "id": 202,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-30--g1",
+  "proposed": null,
+  "image": "001397.jpg",
+  "bbox_id": 3226,
+  "crop": "crop_202.png"
+ },
+ {
+  "id": 203,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": null,
+  "image": "001397.jpg",
+  "bbox_id": 3227,
+  "crop": "crop_203.png"
+ },
+ {
+  "id": 204,
+  "verdict": "wrong_class",
+  "old": "regulatory--end-of-speed-limit-zone--g1",
+  "proposed": null,
+  "note": "cattle crossing",
+  "image": "001401.jpg",
+  "bbox_id": 3235,
+  "crop": "crop_204.png"
+ },
+ {
+  "id": 205,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g3",
+  "proposed": null,
+  "note": "parking instruction sign",
+  "image": "001434.jpg",
+  "bbox_id": 3298,
+  "crop": "crop_205.png"
+ },
+ {
+  "id": 206,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001438.jpg",
+  "bbox_id": 3304,
+  "crop": "crop_206.png"
+ },
+ {
+  "id": 207,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-50--g6",
+  "proposed": null,
+  "image": "001446.jpg",
+  "bbox_id": 3326,
+  "crop": "crop_207.png"
+ },
+ {
+  "id": 208,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001453.jpg",
+  "bbox_id": 3337,
+  "crop": "crop_208.png"
+ },
+ {
+  "id": 209,
+  "verdict": "unclear",
+  "old": "regulatory--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001460.jpg",
+  "bbox_id": 3351,
+  "crop": "crop_209.png"
+ },
+ {
+  "id": 210,
+  "verdict": "wrong_label",
+  "old": "complementary--maximum-speed-limit-75--g1",
+  "proposed": "regulatory--maximum-speed-limit-80",
+  "image": "001464.jpg",
+  "bbox_id": 3366,
+  "crop": "crop_210.png"
+ },
+ {
+  "id": 211,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-led-100--g1",
+  "proposed": "regulatory--maximum-speed-limit-70",
+  "image": "001468.jpg",
+  "bbox_id": 3374,
+  "crop": "crop_211.png"
+ },
+ {
+  "id": 212,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": null,
+  "image": "001470.jpg",
+  "bbox_id": 3390,
+  "crop": "crop_212.png"
+ },
+ {
+  "id": 213,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-65--g2",
+  "proposed": null,
+  "image": "001473.jpg",
+  "bbox_id": 3393,
+  "crop": "crop_213.png"
+ },
+ {
+  "id": 214,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-50--g6",
+  "proposed": null,
+  "image": "001475.jpg",
+  "bbox_id": 3400,
+  "crop": "crop_214.png"
+ },
+ {
+  "id": 215,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-led-100--g1",
+  "proposed": "regulatory--maximum-speed-limit-50",
+  "image": "001481.jpg",
+  "bbox_id": 3412,
+  "crop": "crop_215.png"
+ },
+ {
+  "id": 216,
+  "verdict": "unclear",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001486.jpg",
+  "bbox_id": 3426,
+  "crop": "crop_216.png"
+ },
+ {
+  "id": 217,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-80--g1",
+  "proposed": null,
+  "image": "001503.jpg",
+  "bbox_id": 3462,
+  "crop": "crop_217.png"
+ },
+ {
+  "id": 218,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-35--g1",
+  "proposed": null,
+  "image": "001506.jpg",
+  "bbox_id": 3470,
+  "crop": "crop_218.png"
+ },
+ {
+  "id": 219,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-led-100--g1",
+  "proposed": null,
+  "image": "001510.jpg",
+  "bbox_id": 3476,
+  "crop": "crop_219.png"
+ },
+ {
+  "id": 220,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": "regulatory--maximum-speed-limit-40",
+  "image": "001514.jpg",
+  "bbox_id": 3491,
+  "crop": "crop_220.png"
+ },
+ {
+  "id": 221,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001515.jpg",
+  "bbox_id": 3492,
+  "crop": "crop_221.png"
+ },
+ {
+  "id": 222,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001515.jpg",
+  "bbox_id": 3493,
+  "crop": "crop_222.png"
+ },
+ {
+  "id": 223,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001517.jpg",
+  "bbox_id": 3495,
+  "crop": "crop_223.png"
+ },
+ {
+  "id": 224,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001517.jpg",
+  "bbox_id": 3496,
+  "crop": "crop_224.png"
+ },
+ {
+  "id": 225,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-90--g1",
+  "proposed": null,
+  "image": "001520.jpg",
+  "bbox_id": 3499,
+  "crop": "crop_225.png"
+ },
+ {
+  "id": 226,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001527.jpg",
+  "bbox_id": 3509,
+  "crop": "crop_226.png"
+ },
+ {
+  "id": 227,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001540.jpg",
+  "bbox_id": 3526,
+  "crop": "crop_227.png"
+ },
+ {
+  "id": 228,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001544.jpg",
+  "bbox_id": 3535,
+  "crop": "crop_228.png"
+ },
+ {
+  "id": 229,
+  "verdict": "unclear",
+  "old": "regulatory--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001554.jpg",
+  "bbox_id": 3553,
+  "crop": "crop_229.png"
+ },
+ {
+  "id": 230,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-55--g2",
+  "proposed": null,
+  "image": "001580.jpg",
+  "bbox_id": 3618,
+  "crop": "crop_230.png"
+ },
+ {
+  "id": 231,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-55--g2",
+  "proposed": null,
+  "image": "001580.jpg",
+  "bbox_id": 3619,
+  "crop": "crop_231.png"
+ },
+ {
+  "id": 232,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-55--g2",
+  "proposed": null,
+  "image": "001580.jpg",
+  "bbox_id": 3620,
+  "crop": "crop_232.png"
+ },
+ {
+  "id": 233,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-15--g1",
+  "proposed": null,
+  "note": "weight limit 3.5t",
+  "image": "001588.jpg",
+  "bbox_id": 3635,
+  "crop": "crop_233.png"
+ },
+ {
+  "id": 234,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-15--g1",
+  "proposed": "regulatory--maximum-speed-limit-30",
+  "image": "001588.jpg",
+  "bbox_id": 3636,
+  "crop": "crop_234.png"
+ },
+ {
+  "id": 235,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-20--g1",
+  "proposed": null,
+  "image": "001588.jpg",
+  "bbox_id": 3639,
+  "crop": "crop_235.png"
+ },
+ {
+  "id": 236,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001595.jpg",
+  "bbox_id": 3652,
+  "crop": "crop_236.png"
+ },
+ {
+  "id": 237,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-120--g1",
+  "proposed": "warning--advisory-speed-limit-45",
+  "note": "advisory plaque 45 mph, labeled regulatory 120",
+  "image": "001596.jpg",
+  "bbox_id": 3655,
+  "crop": "crop_237.png"
+ },
+ {
+  "id": 238,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g3",
+  "proposed": null,
+  "image": "001600.jpg",
+  "bbox_id": 3661,
+  "crop": "crop_238.png"
+ },
+ {
+  "id": 239,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001611.jpg",
+  "bbox_id": 3686,
+  "crop": "crop_239.png"
+ },
+ {
+  "id": 240,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-20--g1",
+  "proposed": null,
+  "image": "001628.jpg",
+  "bbox_id": 3733,
+  "crop": "crop_240.png"
+ },
+ {
+  "id": 241,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001640.jpg",
+  "bbox_id": 3762,
+  "crop": "crop_241.png"
+ },
+ {
+  "id": 242,
+  "verdict": "unclear",
+  "old": "regulatory--maximum-speed-limit-10--g1",
+  "proposed": null,
+  "image": "001653.jpg",
+  "bbox_id": 3797,
+  "crop": "crop_242.png"
+ },
+ {
+  "id": 243,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-30--g3",
+  "proposed": null,
+  "image": "001654.jpg",
+  "bbox_id": 3799,
+  "crop": "crop_243.png"
+ },
+ {
+  "id": 244,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-led-100--g1",
+  "proposed": null,
+  "image": "001656.jpg",
+  "bbox_id": 3802,
+  "crop": "crop_244.png"
+ },
+ {
+  "id": 245,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001658.jpg",
+  "bbox_id": 3804,
+  "crop": "crop_245.png"
+ },
+ {
+  "id": 246,
+  "verdict": "wrong_class",
+  "old": "regulatory--end-of-speed-limit-zone--g1",
+  "proposed": null,
+  "image": "001678.jpg",
+  "bbox_id": 3860,
+  "crop": "crop_246.png"
+ },
+ {
+  "id": 247,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-50--g1",
+  "proposed": null,
+  "image": "001680.jpg",
+  "bbox_id": 3867,
+  "crop": "crop_247.png"
+ },
+ {
+  "id": 248,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": null,
+  "image": "001681.jpg",
+  "bbox_id": 3870,
+  "crop": "crop_248.png"
+ },
+ {
+  "id": 249,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": null,
+  "image": "001681.jpg",
+  "bbox_id": 3871,
+  "crop": "crop_249.png"
+ },
+ {
+  "id": 250,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001683.jpg",
+  "bbox_id": 3874,
+  "crop": "crop_250.png"
+ },
+ {
+  "id": 251,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001694.jpg",
+  "bbox_id": 3899,
+  "crop": "crop_251.png"
+ },
+ {
+  "id": 252,
+  "verdict": "wrong_class",
+  "old": "regulatory--end-of-maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001695.jpg",
+  "bbox_id": 3901,
+  "crop": "crop_252.png"
+ },
+ {
+  "id": 253,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": "warning--advisory-speed-limit-65",
+  "image": "001697.jpg",
+  "bbox_id": 3904,
+  "crop": "crop_253.png"
+ },
+ {
+  "id": 254,
+  "verdict": "wrong_label",
+  "old": "regulatory--maximum-speed-limit-45--g1",
+  "proposed": "regulatory--end-of-maximum-speed-limit-70",
+  "image": "001700.jpg",
+  "bbox_id": 3908,
+  "crop": "crop_254.png"
+ },
+ {
+  "id": 255,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-90--g1",
+  "proposed": null,
+  "image": "001718.jpg",
+  "bbox_id": 3941,
+  "crop": "crop_255.png"
+ },
+ {
+  "id": 256,
+  "verdict": "wrong_label",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": "regulatory--maximum-speed-limit-50",
+  "image": "001740.jpg",
+  "bbox_id": 4007,
+  "crop": "crop_256.png"
+ },
+ {
+  "id": 257,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-65--g2",
+  "proposed": null,
+  "image": "001742.jpg",
+  "bbox_id": 4013,
+  "crop": "crop_257.png"
+ },
+ {
+  "id": 258,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-20--g1",
+  "proposed": null,
+  "image": "001746.jpg",
+  "bbox_id": 4031,
+  "crop": "crop_258.png"
+ },
+ {
+  "id": 259,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001754.jpg",
+  "bbox_id": 4054,
+  "crop": "crop_259.png"
+ },
+ {
+  "id": 260,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001754.jpg",
+  "bbox_id": 4055,
+  "crop": "crop_260.png"
+ },
+ {
+  "id": 261,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-led-100--g1",
+  "proposed": null,
+  "note": "traffic cone, not a sign",
+  "image": "001763.jpg",
+  "bbox_id": 4080,
+  "crop": "crop_261.png"
+ },
+ {
+  "id": 262,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-led-100--g1",
+  "proposed": null,
+  "image": "001765.jpg",
+  "bbox_id": 4082,
+  "crop": "crop_262.png"
+ },
+ {
+  "id": 263,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-15--g1",
+  "proposed": null,
+  "note": "weight limits 15t/10t",
+  "image": "001775.jpg",
+  "bbox_id": 4103,
+  "crop": "crop_263.png"
+ },
+ {
+  "id": 264,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001776.jpg",
+  "bbox_id": 4105,
+  "crop": "crop_264.png"
+ },
+ {
+  "id": 265,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-15--g1",
+  "proposed": null,
+  "image": "001782.jpg",
+  "bbox_id": 4115,
+  "crop": "crop_265.png"
+ },
+ {
+  "id": 266,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": null,
+  "image": "001793.jpg",
+  "bbox_id": 4144,
+  "crop": "crop_266.png"
+ },
+ {
+  "id": 267,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-80--g1",
+  "proposed": null,
+  "image": "001803.jpg",
+  "bbox_id": 4164,
+  "crop": "crop_267.png"
+ },
+ {
+  "id": 268,
+  "verdict": "unclear",
+  "old": "regulatory--end-of-maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001805.jpg",
+  "bbox_id": 4169,
+  "crop": "crop_268.png"
+ },
+ {
+  "id": 269,
+  "verdict": "wrong_label",
+  "old": "complementary--maximum-speed-limit-30--g1",
+  "proposed": "warning--advisory-speed-limit-75",
+  "image": "001808.jpg",
+  "bbox_id": 4175,
+  "crop": "crop_269.png"
+ },
+ {
+  "id": 270,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-30--g3",
+  "proposed": null,
+  "image": "001810.jpg",
+  "bbox_id": 4180,
+  "crop": "crop_270.png"
+ },
+ {
+  "id": 271,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-25--g2",
+  "proposed": null,
+  "image": "001811.jpg",
+  "bbox_id": 4184,
+  "crop": "crop_271.png"
+ },
+ {
+  "id": 272,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001827.jpg",
+  "bbox_id": 4218,
+  "crop": "crop_272.png"
+ },
+ {
+  "id": 273,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": null,
+  "image": "001837.jpg",
+  "bbox_id": 4233,
+  "crop": "crop_273.png"
+ },
+ {
+  "id": 274,
+  "verdict": "unclear",
+  "old": "complementary--maximum-speed-limit-55--g1",
+  "proposed": null,
+  "image": "001847.jpg",
+  "bbox_id": 4271,
+  "crop": "crop_274.png"
+ },
+ {
+  "id": 275,
+  "verdict": "wrong_label",
+  "old": "complementary--maximum-speed-limit-30--g1",
+  "proposed": "warning--advisory-speed-limit-75",
+  "image": "001863.jpg",
+  "bbox_id": 4323,
+  "crop": "crop_275.png"
+ },
+ {
+  "id": 276,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-65--g2",
+  "proposed": null,
+  "image": "001864.jpg",
+  "bbox_id": 4328,
+  "crop": "crop_276.png"
+ },
+ {
+  "id": 277,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001869.jpg",
+  "bbox_id": 4341,
+  "crop": "crop_277.png"
+ },
+ {
+  "id": 278,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001871.jpg",
+  "bbox_id": 4346,
+  "crop": "crop_278.png"
+ },
+ {
+  "id": 279,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-60--g1",
+  "proposed": null,
+  "image": "001872.jpg",
+  "bbox_id": 4348,
+  "crop": "crop_279.png"
+ },
+ {
+  "id": 280,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": null,
+  "image": "001872.jpg",
+  "bbox_id": 4349,
+  "crop": "crop_280.png"
+ },
+ {
+  "id": 281,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": null,
+  "image": "001887.jpg",
+  "bbox_id": 4376,
+  "crop": "crop_281.png"
+ },
+ {
+  "id": 282,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001892.jpg",
+  "bbox_id": 4383,
+  "crop": "crop_282.png"
+ },
+ {
+  "id": 283,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-15--g1",
+  "proposed": null,
+  "note": "weight limit 2.5t",
+  "image": "001906.jpg",
+  "bbox_id": 4420,
+  "crop": "crop_283.png"
+ },
+ {
+  "id": 284,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-40--g1",
+  "proposed": null,
+  "image": "001911.jpg",
+  "bbox_id": 4437,
+  "crop": "crop_284.png"
+ },
+ {
+  "id": 285,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-20--g1",
+  "proposed": null,
+  "image": "001912.jpg",
+  "bbox_id": 4441,
+  "crop": "crop_285.png"
+ },
+ {
+  "id": 286,
+  "verdict": "wrong_class",
+  "old": "complementary--maximum-speed-limit-20--g1",
+  "proposed": null,
+  "image": "001912.jpg",
+  "bbox_id": 4442,
+  "crop": "crop_286.png"
+ },
+ {
+  "id": 287,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-25--g2",
+  "proposed": null,
+  "image": "001935.jpg",
+  "bbox_id": 4480,
+  "crop": "crop_287.png"
+ },
+ {
+  "id": 288,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-60--g1",
+  "proposed": null,
+  "image": "001937.jpg",
+  "bbox_id": 4486,
+  "crop": "crop_288.png"
+ },
+ {
+  "id": 289,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001949.jpg",
+  "bbox_id": 4504,
+  "crop": "crop_289.png"
+ },
+ {
+  "id": 290,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001949.jpg",
+  "bbox_id": 4505,
+  "crop": "crop_290.png"
+ },
+ {
+  "id": 291,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001950.jpg",
+  "bbox_id": 4507,
+  "crop": "crop_291.png"
+ },
+ {
+  "id": 292,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-25--g1",
+  "proposed": null,
+  "image": "001952.jpg",
+  "bbox_id": 4523,
+  "crop": "crop_292.png"
+ },
+ {
+  "id": 293,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-100--g1",
+  "proposed": null,
+  "image": "001963.jpg",
+  "bbox_id": 4545,
+  "crop": "crop_293.png"
+ },
+ {
+  "id": 294,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-90--g1",
+  "proposed": null,
+  "image": "001969.jpg",
+  "bbox_id": 4563,
+  "crop": "crop_294.png"
+ },
+ {
+  "id": 295,
+  "verdict": "wrong_class",
+  "old": "regulatory--end-of-maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001972.jpg",
+  "bbox_id": 4569,
+  "crop": "crop_295.png"
+ },
+ {
+  "id": 296,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-110--g1",
+  "proposed": null,
+  "note": "airport sign (TWEED)",
+  "image": "001976.jpg",
+  "bbox_id": 4576,
+  "crop": "crop_296.png"
+ },
+ {
+  "id": 297,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-70--g1",
+  "proposed": null,
+  "image": "001983.jpg",
+  "bbox_id": 4592,
+  "crop": "crop_297.png"
+ },
+ {
+  "id": 298,
+  "verdict": "wrong_class",
+  "old": "regulatory--maximum-speed-limit-15--g1",
+  "proposed": null,
+  "note": "weight limit 3.5t",
+  "image": "001985.jpg",
+  "bbox_id": 4596,
+  "crop": "crop_298.png"
+ },
+ {
+  "id": 299,
+  "verdict": "wrong_class",
+  "old": "regulatory--end-of-maximum-speed-limit-30--g2",
+  "proposed": null,
+  "image": "001986.jpg",
+  "bbox_id": 4605,
+  "crop": "crop_299.png"
+ }
+]
