@@ -38,7 +38,9 @@
 
 The repo has NO SQL/data-pull functions — all tools read local JSON + crops (Mapillary stand-in). To test on internal traffic-sign data:
 
-- Use **data-bae** (Mrigesh) as plain Python / raw queries, NOT its MCP-server packaging (MCP is stripped from the wheel). Ask Mrigesh for the direct access path.
+- **Findings 2026-08-06 (work-side agent):** data-bae = MCP server `great_gadsbq` in the separate `~/lat/data-platform` repo (binary at `scripts/.wrapped/great_gadsbq`); skills scalex-bae / umf-bae / streamlat-bae already use it. **No traffic-sign tables exist in BQ.** Autolabeling data lives in **LakeFS**; BQ holds only metadata (`scalex_datawatch_source` tables). BQ auth = `gcloud auth application-default login`.
+- Consequence: the adapter is BQ-metadata → LakeFS-labels/frames, not BQ-labels. Phase 1 stays plain `google-cloud-bigquery` + LakeFS client as `@function_tool`s, NOT MCP (wheel constraint). Phase 2 = wire `great_gadsbq` as MCP server post-Dagster-upgrade.
+- Next: data survey before any tool code — (1) which LakeFS repo/paths hold sign-relevant autolabels + format, (2) which `scalex_datawatch_source` metadata identifies them (→ `list_items` query), (3) where frames live / are crops pre-materialized (→ `view_sample`), (4) LakeFS auth story (BQ ADC doesn't cover it).
 - Build `data_source.py` adapter behind the existing tool interface, keeping local data as default (`--source=bigquery` flag) so the working loop never breaks:
   - `list_items(dataset_tag)` → SQL on autolabel/cache-label tables, emitting the same item shape tools.py uses today.
   - `view_sample(item_id)` → needs image fetch + bbox crop: labels reference full frames in blob storage; find where frames live and whether pre-cropped patches are cached.
