@@ -143,3 +143,26 @@ For example, in the results: at iteration 6 the agent switched from Tesseract to
 **Lily:** That's actually a very good idea. Thank you, Mrigesh. Really enjoyed the conversation, I'm learning a lot.
 
 **Mrigesh:** Same here. Catch you around.
+
+---
+
+# Discussion
+
+## Everything discussed with Mrigesh
+
+| # | Topic | Mrigesh's take | Status / decision | Action owner |
+|---|-------|----------------|-------------------|--------------|
+| 1 | Stay in av or move out | Stay in av on Dillon's branch, chain PRs. Reconsider only if his PR ETA is ~1 month | Open, blocked on Dillon's ETA | Lily asks Dillon |
+| 2 | How Aqua is invoked | Incremental: terminal first, front end later. Copilot invocation possible but not now | Decided: terminal first | - |
+| 3 | Why an agent loop (vs plain MCP tools) | Accepted Lily's rationale: no tools exist yet, discovery loop finds cheap deterministic tools vs GPT-5/Opus baseline | Decided: keep discovery loop | - |
+| 4 | Two-phase model | Endorsed: offline discovery now, freeze validated tools as MCP server later. Generated tools get committed + code reviewed | Decided | - |
+| 5 | Which repo for Aqua's MCP tools | data-platform repo, like data-bae and MLTP's app. Fast CI (2 min vs 1-2 hr in av). Works if tools have no av dependency. Only av need is the LIAM client, which is easy to move | Decided: data-platform | Lily |
+| 6 | Auto-porting the av PR | data-platform repo's agent can port the av PR into a repo-convention tool automatically | To try | Lily |
+| 7 | Where the LLM lives | data-bae pattern: MCP tools fully deterministic, LLM only in the harness loop | Decided: same for Aqua | - |
+| 8 | Getting 2D sign data into BQ | Labels + crops are in sensing segment stage gold on LakeFS. Krishna registers assets for weekly BQ export. Bytes in BQ if small, else path pointers resolved from LakeFS | Open: contact Krishna, size the crops | Lily |
+| 9 | Crop caching | Lily: fetch crops locally / cache rather than resolve pointers every time. Mrigesh: pointers fine, tool resolves path | Open: decide after sizing | Lily |
+| 10 | Sandbox on HPC | Docker by default, already sandboxed. Read access easy, write-back needs 3-4 approvals | Understood, constraint accepted | - |
+| 11 | Discovery vs deployment permissions | Discovery locally with human in the loop (full permissions), freeze + commit tools, deploy frozen tools in Docker | Decided | - |
+
+(discussion continues below)
+
