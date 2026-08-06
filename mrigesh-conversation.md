@@ -224,5 +224,26 @@ Mrigesh asked: what is the difference between invoking the Aqua agent vs just do
 
 Sources: [tool-count degradation study](https://arxiv.org/html/2605.24660v1), [Anthropic: writing effective tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents), [Databricks: what is an agent harness](https://www.databricks.com/blog/ai-harness), [Addy Osmani: agent harness engineering](https://addyosmani.com/blog/agent-harness-engineering/), [tool selection at scale](https://tianpan.co/blog/2026-04-09-tool-selection-problem-agent-tool-routing-at-scale)
 
+## Conversation 4: Does MCP-first conflict with building our own harness later?
+
+Question: if we build an MCP server and Copilot invokes it, we have no harness at all. If a specialized harness beats a general one, do the two paths conflict? Can we still build the specialized harness later?
+
+**Answer: no conflict. Harness and tools are different layers, MCP is just packaging for the tool layer.**
+
+Three-layer structure:
+1. **Tool logic**: plain Python functions (view_sample, load_labels, paddle_ocr_detect, propose_fix). All real work lives here. Knows nothing about MCP or the SDK
+2. **MCP server**: thin adapter exposing those functions. What Copilot drives. Exactly how data-bae is built: deterministic tools, zero agentic logic inside
+3. **Specialized harness**: the OpenAI Agents SDK loop, added later, consuming the SAME tool logic. Either import the functions as @function_tools (what aqua_mvp does today) or connect to our own MCP server as a client (the SDK is MCP-native, which is why the design doc chose it)
+
+Consequences:
+- MCP-first = "tools first, harness second", not "MCP instead of harness". Nothing gets thrown away
+- The discovery harness (SDK loop, local) keeps running in the meantime. Only the production batch harness is deferred
+- When Q3 forces the batch harness, it is a small PR: loop + system prompt + eval around already-reviewed tools
+- Sequencing is forced by constraints anyway: batch harness needs the SDK (wheel-blocked in av, stock in data-platform), MCP server needs neither and ships the interactive door now
+
+**One real trade-off**: chat-harness tools want verbose self-explanatory returns, batch-loop tools want lean token-efficient returns. Keep layer 1 structured and lean, let the MCP adapter add friendly framing. Do not bake chat verbosity into layer 1
+
+**Decision: build order = tool library -> MCP door (Copilot) -> batch harness (SDK loop)**
+
 (discussion continues below)
 
