@@ -358,5 +358,25 @@ Numbers posted to the thread: total dataset incl. crops column ~22 GB, metadata 
 
 **Open in the same thread**: where the shared crop cache lives for HPC runs (shared volume / baked into Docker image / object bucket). Workstation MVP = a directory; name the future home now
 
+## Conversation 10: How industry stores agent screenshots/images (the Fleet AI interview question)
+
+Same question as SLIF crops, same unanimous answer: **bytes never go in the database, the database gets metadata + a pointer.** DB flavor (BQ/Postgres/columnar) only changes the pointer table's shape.
+
+**Computer-use agent practice**
+- Screenshots -> object storage (S3/GCS), one object per frame, trace row stores step, action, reasoning + the object key. Research pipelines: trajectory directory = trajectory JSON + screenshots
+- Content-addressed keys (hash = key) give dedup: consecutive frames are often identical, Laminar stores only unique content, ~20x cheaper
+- Replay via presigned URLs: review UI pulls from bucket, app/DB never in the byte path. LangSmith's trace store = stateless services over object storage + Postgres
+- Tiered retention: traces 15-90 days hot (Datadog tiers), screenshots age to cold storage on lifecycle policy, small structured rows live longer
+
+**Why not in the DB**
+- Percona benchmark: Postgres with 10 GB BLOBs = 3-5x slower queries than metadata-only + S3
+- Blobs tie up connections while streaming, inflate WAL/replica lag, can't be content-indexed
+- Accepted exception: small, low-traffic, transactionally coupled images (avatars). Not screenshot streams
+- Columnar warehouses fail on access pattern: blob point lookups are the opposite of scan-oriented engines
+
+**Interview-crisp answer**: content-addressed objects in blob storage, trace rows in the DB with step metadata + object key, presigned URLs for replay, dedup on hash, lifecycle policy on the bucket. One principle: separate by access pattern and lifecycle, query layer holds pointers, byte layer holds bytes. SLIF crops, aqua_events.result_uri, and CU screenshots are the same design at three scales.
+
+Sources: [Laminar](https://laminar.sh/), [LangSmith observability](https://www.langchain.com/langsmith/observability), [Postgres wiki: binary files in DB](https://wiki.postgresql.org/wiki/BinaryFilesInDB), [blob vs DB tradeoffs](https://engineeringatscale.substack.com/p/when-to-use-blob-storage-vs-database), [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
+
 (discussion continues below)
 
