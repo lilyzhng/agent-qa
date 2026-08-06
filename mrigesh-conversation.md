@@ -322,5 +322,28 @@ Correction to Figure 1 reading: data collector -> tool maker -> reflector -> tes
 - Bonus of OTel alignment: OpenAI Agents SDK exports OTel spans, so instrumentation can populate aqua_events with near-zero glue, and any future company observability backend maps onto it
 - Sources: [Langfuse data model](https://langfuse.com/docs/observability/data-model), [Langfuse single-table migration](https://langfuse.com/blog/2026-03-10-simplify-langfuse-for-scale), [LangSmith Run schema](https://reference.langchain.com/python/langsmith/schemas/Run), [OTel GenAI observability](https://opentelemetry.io/blog/2026/genai-observability/), [BigQuery nested/denormalized guidance](https://docs.cloud.google.com/bigquery/docs/best-practices-performance-nested)
 
+## Conversation 8: The absolute minimal MVP
+
+**Unaddressed items check**: table rows 6 (auto-port), 8 (Krishna export), 9 (crop sizing) are the open ones, all data plumbing. Biggest gap not in the table at all: internal ground truth and eval (the meeting never touched it). Once internal GT exists, existing eval.py machinery works as-is.
+
+**Docker permissions: real but not now**
+- The Copilot MVP dodges it entirely: the MCP server runs as a local process on the workstation with Lily's own permissions (Mrigesh's "locally it has all the permissions you have"). No sandbox, no grants, no approvals
+- Docker permissions only enter at deployed-batch-on-HPC stage, and the open-loop design already reduced that ask to the easy kind (read BQ/LakeFS, insert-only writes). Front-loading it = solving phase 3's problem during phase 1
+
+**The minimal MVP: zero external dependencies**
+1. Freeze the aqua_mvp tools: view_sample, load_labels, PaddleOCR detector, cross-pass check, propose_fix
+2. Wrap as MCP server (stdio, ~50 lines with the standard mcp package; pydantic constraint doesn't exist outside av)
+3. Register with Copilot on the workstation
+4. Data: local Mapillary crops already on disk
+5. Demo: "QA items 1-50, which labels are wrong and what should they be?"
+No Krishna, no BQ, no internal GT, no data-platform PR, no Dillon, no sandbox. Days, not weeks. A demo converts stakeholders faster than an architecture doc
+
+**Then one dependency per step**
+- +1: PR the MCP server into data-platform (tests row 6 auto-port for free)
+- +2: Krishna export lands, swap data source to BQ + LakeFS pointers. FILE THE ASK NOW: weekly export cadence makes it the slowest clock, run it in parallel
+- +3: internal GT via the triage UI over the first exported slice = believable internal numbers
+- +4: the two BQ tables (until then MCP server logs events/decisions to local JSONL with the same schema, migration = loader script)
+- +5: batch harness on HPC = the first moment Docker permissions actually matter
+
 (discussion continues below)
 
