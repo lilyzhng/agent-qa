@@ -16,7 +16,7 @@
 - **Dependency saga:** Dagster pins pydantic <2.10 repo-wide; stock `openai-agents` needs pydantic 2.11 APIs, `openai>=2.45`, `mcp>=1.19`, `websockets>=15` (repo: pydantic 2.9.2, openai 2.41.1, websockets 10.4). No openai-agents release fits the pin. Resolution: **patched wheel via wheel builder** (Alex K / Dillon K), with MCP and realtime/websocket support STRIPPED, pydantic relaxed to >=2.9.2. Streaming (SSE via openai client) is kept — it does not use the websockets package.
 - Long-term fix: Dagster upgrade (medium project, ~1 month, #ml-platform-support / asmith's team). When it lands, drop the patched wheel for stock openai-agents. The wheel is a frozen bridge — do not chase upstream openai-agents releases on it.
 - **VERIFIED WORKING:** `bazel build //kits/openai/agents:hello_world` runs end-to-end through the proxy (joke round-trip, Gemini). So: wheel resolves, LIAM auth passes, SDK loop runs.
-- **VERIFIED 2026-08-06:** tool calling (`@function_tool` weather test) AND handoffs both work end-to-end through the proxy. Step 0 caveat: confirm the test ran against the INTERNAL model Aqua will use, not the Gemini demo model — if Gemini, re-run with `model=<internal>` before porting (proves the model, not just the proxy).
+- **VERIFIED 2026-08-06:** tool calling (`@function_tool` weather test) AND handoffs both work end-to-end through the proxy, against a GPT (ChatGPT) model. Proxy + wheel + SDK + tool loop all confirmed. Note for later: when Aqua switches to an internal-cluster model, re-run the one-line tool test with that `model=` — GPT passing proves the proxy path, not that model's tool-calling.
 
 ## Decisions already made (don't re-litigate)
 
@@ -27,7 +27,7 @@
 
 ## Next steps, in order
 
-0. **[DONE 2026-08-06, one caveat]** Function calling + handoffs verified end-to-end through the proxy. Remaining: if the test used the Gemini demo model, re-run once with `model=<internal model>` (one-line change). If the internal model fails tool calling (serving disabled / model not trained for it), STOP and escalate — the fallback changes the whole port.
+0. **[DONE 2026-08-06]** Function calling + handoffs verified end-to-end through the proxy with a GPT model. Deferred check: when Aqua later switches to an internal-cluster model, re-run this test with that `model=` first — if it fails tool calling (serving disabled / model not trained for it), stop and escalate before continuing.
 1. Port `tools.py` + `tool_router.py` only. Swap auth: delete `.env`/`AsyncOpenAI` setup, use the `kits.openai` client per hello_world's pattern; change model string to the internal model.
 2. Bazel-ify: `py_binary` + `BUILD` in the team dir, mirroring hello_world's `BUILD`; deps = patched openai-agents target + kits/openai.
 3. Run ONE item end-to-end (agent views a crop, submits a verdict). That's the milestone.
