@@ -164,5 +164,36 @@ For example, in the results: at iteration 6 the agent switched from Tesseract to
 | 10 | Sandbox on HPC | Docker by default, already sandboxed. Read access easy, write-back needs 3-4 approvals | Understood, constraint accepted | - |
 | 11 | Discovery vs deployment permissions | Discovery locally with human in the loop (full permissions), freeze + commit tools, deploy frozen tools in Docker | Decided | - |
 
+## Conversation 1: How is Aqua invoked? (table row 2)
+
+The question bundles two different products. "Who is the agent loop?" has exactly two answers:
+
+**Option A: Aqua's own loop (OpenAI Agents SDK harness)**
+- Aqua is a program. You run it: terminal, cron, HPC job, with a dataset tag
+- It churns through items with its restricted QA tools and writes verdicts
+- Nobody talks to it. This is what "invoke via terminal" meant in the meeting, and what aqua_mvp already is
+- This is the batch door. The Q3 milestone (QA a whole dataset tag, thousands of items, deterministic, on HPC) needs this loop
+
+**Option B: An existing chat harness's loop (Copilot at work, Claude Code at home)**
+- Aqua stops being an agent and becomes a toolbox: MCP tools (view_sample, load_labels, propose_fix) that Copilot's LLM drives while a human chats
+- This is what Mrigesh meant by "the agent won't actually be an agent, it'll just be a list of MCP tools"
+- Key unlock: this IS the frontend. The design doc's chat window where a user reports a sign issue already exists: Copilot is a chat window on every engineer's machine that consumes MCP servers. Zero frontend work
+- Wrong tool for batch: sprawling toolset, no determinism guarantees (Lily's own argument from the meeting)
+
+**Resolution: not either/or. Two doors into the same tools**
+- Copilot + MCP tools = interactive door: seeded issue triage, demos, stakeholders poking at it
+- SDK loop as CLI = batch door: the Q3 deliverable. Same tool implementations underneath (two-phase model)
+- Current state: Claude Code as discovery-stage harness is fine, discovery is local and human-in-the-loop anyway (row 11)
+- Recommendation: ship the MCP server + Copilot door first. Smaller (tools only, no loop porting), works in data-platform today without the wheel, gives Mrigesh and others something to touch. Batch loop reuses the same tools after
+- Open: does the Q3 milestone wording require the batch run, or does the interactive door count?
+
+## Conversation 2: av or data-platform? (table rows 1 and 5)
+
+- Reasons to stay in av: closer to existing information and features (online team, PAD team). But honestly nothing is needed from them: data comes from BQ, and the agent can be pointed at av tools when needed
+- Dillon's ETA (followed up): he will try his best to land next week, but it looks like it will take a long time
+- Key technical point: the whole pydantic/wheel saga is an av-only constraint. data-platform has no Dagster pin. data-bae itself runs as an MCP server there on modern deps. In data-platform, stock openai-agents likely works, MCP included, no patched wheel
+- To confirm with one command in the data-platform env: pip install openai-agents
+- Lily's lean: put everything under data-platform. Faster than waiting on av
+
 (discussion continues below)
 
