@@ -311,5 +311,16 @@ Correction to Figure 1 reading: data collector -> tool maker -> reflector -> tes
 
 **The ask to Mrigesh** (not "create a table for us"): where should Aqua's app-owned tables live (which project/dataset per data-platform convention), and how does a sandboxed job get WRITE access to that one dataset? Agent needs append-only insert on tables 2 and 3 (1 written by harness, 4 by CI, 5 later). One dataset, insert-only, no update/delete: the narrow grant shape that passes permissions review
 
+**REVISION after researching industry practice: two tables, not five**
+- Observability platforms converged on ONE typed-span table: Langfuse started with traces+observations and collapsed to one observations table (trace attrs denormalized onto every row). LangSmith is single-entity (everything is a run, root run = the trace). OTel GenAI conventions standardize the span types: invoke_agent > chat (LLM call) + execute_tool children, with defined attrs for model/tokens/cost
+- BigQuery guidance agrees: denormalized single date-partitioned event table, nested STRUCTs, avoid joins
+- Revised design:
+  1. `aqua_events`: the one span table, OTel-aligned, date-partitioned. run_id, span_id, parent_span_id, span_type (invoke_agent/chat/execute_tool/decision/action), item_id, tool_name, attrs STRUCT (args, result_summary, result_uri), usage STRUCT (tokens, cost, latency_ms), timestamps, status, plus run-level attrs (dataset_tag, model, harness_version, tool_versions, invoked_via) denormalized onto every row. aqua_runs becomes the root invoke_agent row. Run summary = a query, not a table
+  2. `aqua_decisions`: unchanged, deliberately separate. Domain table, not observability: stakeholders + rework API query it, small, stable schema, long-lived, while events are high-volume exhaust with TTL/archive. Different lifecycle = different table
+- Taxonomy: stays git, BQ mirror is a view/tiny sync. aqua_actions: starts as span_type='action' rows, promote only if rework integration grows real state
+- Principle: one table per LIFECYCLE, not per concept
+- Bonus of OTel alignment: OpenAI Agents SDK exports OTel spans, so instrumentation can populate aqua_events with near-zero glue, and any future company observability backend maps onto it
+- Sources: [Langfuse data model](https://langfuse.com/docs/observability/data-model), [Langfuse single-table migration](https://langfuse.com/blog/2026-03-10-simplify-langfuse-for-scale), [LangSmith Run schema](https://reference.langchain.com/python/langsmith/schemas/Run), [OTel GenAI observability](https://opentelemetry.io/blog/2026/genai-observability/), [BigQuery nested/denormalized guidance](https://docs.cloud.google.com/bigquery/docs/best-practices-performance-nested)
+
 (discussion continues below)
 
