@@ -5,6 +5,30 @@ Date: Aug 6, 2026
 Participants: Lily Zhang, Mrigesh Kalvani
 (Cleaned from Granola transcript. Names and terms corrected: Dagster, pydantic, Dillon, Tesseract, PaddleOCR, LakeFS, data-bae, LIAM. Raw transcript in git history.)
 
+# Action Items (updated after Conversations 1-12)
+
+**Now (zero dependencies)**
+- [ ] Build the MVP: wrap frozen aqua_mvp tools (view_sample, load_labels, PaddleOCR detector, cross-pass check, propose_fix) as an MCP server, register with Copilot, demo on local Mapillary crops (Conv 8)
+- [ ] Reply to SLIF thread: metadata + GT (44 MB) to BQ with lakefs_path/crop_key pointers, crops (22 GB) NOT to BQ, materialize once to local cache (Conv 9)
+- [ ] File the Krishna ask: register sensing segment stage gold for weekly BQ export. Slowest clock in the plan, run in parallel (Conv 8)
+- [ ] Confirm stock openai-agents installs in the data-platform env (no Dagster pin there) (Conv 2)
+
+**Next (one dependency each)**
+- [ ] PR the MCP server into data-platform, test the repo agent's auto-port on the av PR (Conv 8, table row 6)
+- [ ] Ask Mrigesh: which project/dataset for Aqua's app-owned tables + insert-only write grant for a sandboxed job (Conv 7)
+- [ ] Write the prep script: LakeFS parquet -> crop cache as PNGs keyed by item ID (pyarrow/DuckDB) (Conv 9, 12)
+- [ ] When export lands: swap MCP data source from local Mapillary to BQ metadata + cache; internal GT via triage UI over the first exported slice (Conv 8)
+
+**Later**
+- [ ] Create the two BQ tables: aqua_events (OTel-style spans, + lakefs_ref column) and aqua_decisions. Until then, log to local JSONL with the same schema (Conv 7, 11, 12)
+- [ ] Batch harness (OpenAI Agents SDK loop) once tools are proven via Copilot; first moment Docker/HPC permissions matter (Conv 4, 8)
+- [ ] Decide shared crop cache home for HPC runs: volume / baked image / bucket (Conv 9)
+- [ ] Update the design doc: MCP server as the frozen-tool phase, taxonomy in git with promotion flow, cite the Amazon tool-making paper (Conv 5, 6)
+
+**Done**
+- [x] Dillon ETA asked: "next week" but likely long -> lean data-platform (Conv 2)
+- [x] Storage decision: BQ = query surface, LakeFS = source of truth + bytes, local cache = working set, no Postgres (Conv 12)
+
 # Summary
 
 - **Repo status:** Dillon patched Dagster to relax the pydantic pin. Lily branched off his branch and tests pass. His PR hasn't landed yet (testing to avoid breaking Dagster). Recommendation: stay in av and chain PRs if his ETA is ~1 week; reconsider moving out if ~1 month. Ask Dillon for the ETA.
