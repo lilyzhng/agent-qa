@@ -195,5 +195,34 @@ The question bundles two different products. "Who is the agent loop?" has exactl
 - To confirm with one command in the data-platform env: pip install openai-agents
 - Lily's lean: put everything under data-platform. Faster than waiting on av
 
+## Conversation 3: Specialized agent vs Copilot directly (research-backed)
+
+Mrigesh asked: what is the difference between invoking the Aqua agent vs just doing it with Copilot? Lily answered: Aqua's tools are QA-specific, Copilot's harness has so much other information that the agent gets confused. Research verdict: **legit and empirically supported, but it is one of four reasons, and not the strongest one for Aqua.**
+
+**The tool-confusion claim is true, with numbers**
+- ~50 tools: 84-95% selection accuracy. ~200 tools: 41-83%. ~740 tools: 0-20%
+- Berkeley Function Calling: 43% -> 2% going from 4 to 51 tools
+- Production rule of thumb: degradation starts past ~15-20 active tools. Plus position bias and tool hallucination
+- Anthropic's tool-writing guidance: be selective, small high-leverage toolsets
+
+**What Lily is building = a harness**
+- Agent = model + harness. Harness = the loop (prompt -> LLM -> execute tools -> feed back -> repeat), tool registry, system prompt, state, stopping conditions, permissions
+- Copilot/Claude Code are general harnesses for software engineering. aqua_mvp is a purpose-built QA harness: same loop, QA-only tools, own eval
+- The harness is a known performance lever: same model scores very differently in different harnesses
+
+**Standard industry pattern**
+- Literature splits coding agents into specialized (SWE-agent, AutoCodeRover, RepairAgent) vs general platforms (Claude Code, Copilot, Cursor)
+- Narrow-scope agents win when you need repeatability and precision. Generalists "mix intents and misuse tools" on high-precision tasks
+
+**The complete answer to Mrigesh, four differences ranked for Aqua**
+1. Determinism and repeatability: batch QA over thousands of items must behave the same every run. Copilot has no such contract
+2. Evaluability: fixed P/R/F1 eval vs hidden GT is how attempt 6 -> 7 was proven. You cannot regression-test "chat with Copilot"
+3. Cost and control: own loop controls model, token budget, per-item ceiling
+4. Tool focus (Lily's original answer): true but most attackable alone, since scoped per-session MCP tools partially fix Copilot confusion. Hence two doors: Copilot + scoped MCP tools for interactive, specialized harness for batch/eval
+
+**Caveat:** some benchmarks show general agents beating specialized ones on unseen requirements. Keep Aqua's scope truly narrow (label QA, not data quality in general), let the interactive door handle open-ended cases.
+
+Sources: [tool-count degradation study](https://arxiv.org/html/2605.24660v1), [Anthropic: writing effective tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents), [Databricks: what is an agent harness](https://www.databricks.com/blog/ai-harness), [Addy Osmani: agent harness engineering](https://addyosmani.com/blog/agent-harness-engineering/), [tool selection at scale](https://tianpan.co/blog/2026-04-09-tool-selection-problem-agent-tool-routing-at-scale)
+
 (discussion continues below)
 
