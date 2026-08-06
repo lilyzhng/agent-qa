@@ -268,5 +268,30 @@ Plan agreed: MVP = freeze the 7-iteration tools -> build MCP -> user-invokable. 
 
 Sources: [Amazon tool-making pipeline](https://arxiv.org/html/2607.08010v1), [SoK: Agentic Skills](https://arxiv.org/pdf/2602.20867), [Voyager](https://voyager.minedojo.org/), [agent GitHub identity + branch protection](https://savas.me/2026/04/27/my-coding-agent-needed-its-own-github-identity/), [Copilot coding agent security model](https://learn.microsoft.com/en-us/training/modules/github-copilot-code-agent/2-security-risks-limitations-copilot-code-agent), [Meta GitHub agent cookbook](https://dev.meta.ai/docs/getting-started/cookbook/github-agent)
 
+## Conversation 6: Deep-read of the Amazon tool-making paper (arXiv 2607.08010)
+
+Correction to Figure 1 reading: data collector -> tool maker -> reflector -> testing -> deploy is the OFFLINE pipeline. There is no online toolmaking in the paper. Online = agent runtime + a monitoring loop that sends flagged tools back through the offline pipeline (shadow deploy -> manual review -> promote). Confirms Conversation 5 from the primary source: tools are never born online.
+
+**Domain**: alarm triage in Amazon fulfillment centers, not QA. SOP decision tree (44 decision + 19 action nodes), agents check metrics, find root cause, act. Structurally identical to label QA: repeated per-item procedural checks against production data ending in a verdict. Their SOP node = our failure mode.
+
+**Offline pipeline mechanics (worth stealing)**
+1. Data-collector sub-agent runs baseline codegen on ~3 sampled cases against live MCP, captures execution traces (real schemas, not imagined)
+2. Tool-maker LLM synthesizes candidate from SOP text + tree position + traces
+3. Test vs full labeled set (100-200 cases per node). Pass@1 = correct on every case
+4. Reflector diagnoses failures, up to 3 repair rounds, best candidate wins
+5. Versioned deploy. Runtime falls back to raw codegen only on tool exception
+= Lily's 7-attempt loop formalized: eval set = labeled cases, iteration log = reflector, cross-pass agreement = repair criterion
+
+**Online codegen vs offline tools, measured**
+- Latency -42% p50 (further -62% calling tools directly), tokens -58%, turns -45%
+- Errors: 2.8 -> 1.8% (Qwen3 32B), 1.7 -> 0.8% (GLM-4.5-Air), up to 53% relative
+- 5,000+ production alarms, zero rollbacks
+- Online codegen's only pro: flexibility on unseen cases, kept as fallback
+- Offline cons: needs labeled cases per check, feedback loop stays semi-automated ("cannot yet guarantee every failure caught without human review")
+
+**Two Aqua-relevant findings**
+- Spec quality dominates model quality: clarifying ambiguous SOP text moved pass@1 94.5% -> 99.9%. Write each failure mode like an SOP node, the taxonomy doc is worth more than model upgrades
+- Shadow deployment as promotion gate: new tool versions run parallel to production, discrepancies reviewed before promotion. Copy for Aqua v2 detector updates
+
 (discussion continues below)
 
