@@ -245,5 +245,28 @@ Consequences:
 
 **Decision: build order = tool library -> MCP door (Copilot) -> batch harness (SDK loop)**
 
+## Conversation 5: Online tool generation, storage, and permissions (research-backed)
+
+Plan agreed: MVP = freeze the 7-iteration tools -> build MCP -> user-invokable. Agent loop stays offline for tool discovery, comes online later. Question: how does industry handle online tool generation and the write-permission conflict? Is the open-loop design (agent logs feedback to SQL, tools created offline) the right one?
+
+**Q1: When do people allow online tool generation? Essentially never in production**
+- Voyager-style continuous self-generation only works with deterministic automated verification (games, sandboxes)
+- SkillsBench: self-generated skills average -1.3pp vs NO skills. Curated skills: +16.2pp. Uncurated self-evolution = "skill debt"
+- Production pattern = offline discovery -> validated versioned frozen tools -> online serving
+- Closest match to Aqua: Amazon fulfillment-center alarm triage (arXiv 2607.08010). Tool-making pipeline compiles repeated steps into validated versioned tools before deployment. Runtime agent calls frozen tools, falls back to raw reasoning when no tool fits, and fallback events are logged as the feedback signal for the next offline tool-making round. p50 latency -42%, error rate -53%, revert = config change
+- Verdict: the open-loop design is the industry norm, not a compromise. Online agent orchestrates + logs gaps (SQL feedback table), offline loop turns gaps into tools, review gate, redeploy
+
+**Q2: How is the write-permission conflict handled? Scoped bot identity, not "no write"**
+- Converged model: agent gets its own GitHub App bot identity, short-lived repo-scoped tokens, write ONLY to its own branches (GitHub Copilot agent: only `copilot/*` branches), branch protection on main with no bypass, agent opens PRs but can NEVER approve or merge, CI + human (not the requester) signs off
+- Key insight: this makes the handoff trustworthy, not the agent. Platform enforces the boundary, not the prompt
+- Human review stays mandatory: AI-coauthored PRs carry ~1.7x more issues, security issues 1.5-2x more common
+
+**Aqua roadmap consequence**
+- V1 (now): frozen tools + MCP MVP. Gaps go to a feedback table, agent never touches git. Discovery stays local (full permissions, human in loop)
+- V2 (when feedback volume justifies): agent authors draft PRs under a scoped bot identity from the backlog, humans review. Ask platform team about a bot identity only when hand-processing the backlog gets annoying
+- Framing for Mrigesh: online agent has orchestration autonomy but not authorship autonomy. Tool use online, tool birth offline behind review
+
+Sources: [Amazon tool-making pipeline](https://arxiv.org/html/2607.08010v1), [SoK: Agentic Skills](https://arxiv.org/pdf/2602.20867), [Voyager](https://voyager.minedojo.org/), [agent GitHub identity + branch protection](https://savas.me/2026/04/27/my-coding-agent-needed-its-own-github-identity/), [Copilot coding agent security model](https://learn.microsoft.com/en-us/training/modules/github-copilot-code-agent/2-security-risks-limitations-copilot-code-agent), [Meta GitHub agent cookbook](https://dev.meta.ai/docs/getting-started/cookbook/github-agent)
+
 (discussion continues below)
 
