@@ -170,7 +170,7 @@ The question bundles two different products. "Who is the agent loop?" has exactl
 
 **Option A: Aqua's own loop (OpenAI Agents SDK harness)**
 - Aqua is a program. You run it: terminal, cron, HPC job, with a dataset tag
-- It churns through items with its restricted QA tools and writes verdicts
+- It churns through items with its restricted QA tools and writes its decisions
 - Nobody talks to it. This is what "invoke via terminal" meant in the meeting, and what aqua_mvp already is
 - This is the batch door. The Q3 milestone (QA a whole dataset tag, thousands of items, deterministic, on HPC) needs this loop
 
@@ -197,7 +197,7 @@ The question bundles two different products. "Who is the agent loop?" has exactl
 
 ## Conversation 3: Specialized agent vs Copilot directly (research-backed)
 
-Mrigesh asked: what is the difference between invoking the Aqua agent vs just doing it with Copilot? Lily answered: Aqua's tools are QA-specific, Copilot's harness has so much other information that the agent gets confused. Research verdict: **legit and empirically supported, but it is one of four reasons, and not the strongest one for Aqua.**
+Mrigesh asked: what is the difference between invoking the Aqua agent vs just doing it with Copilot? Lily answered: Aqua's tools are QA-specific, Copilot's harness has so much other information that the agent gets confused. Research answer: **legit and empirically supported, but it is one of four reasons, and not the strongest one for Aqua.**
 
 **The tool-confusion claim is true, with numbers**
 - ~50 tools: 84-95% selection accuracy. ~200 tools: 41-83%. ~740 tools: 0-20%
@@ -254,7 +254,7 @@ Plan agreed: MVP = freeze the 7-iteration tools -> build MCP -> user-invokable. 
 - SkillsBench: self-generated skills average -1.3pp vs NO skills. Curated skills: +16.2pp. Uncurated self-evolution = "skill debt"
 - Production pattern = offline discovery -> validated versioned frozen tools -> online serving
 - Closest match to Aqua: Amazon fulfillment-center alarm triage (arXiv 2607.08010). Tool-making pipeline compiles repeated steps into validated versioned tools before deployment. Runtime agent calls frozen tools, falls back to raw reasoning when no tool fits, and fallback events are logged as the feedback signal for the next offline tool-making round. p50 latency -42%, error rate -53%, revert = config change
-- Verdict: the open-loop design is the industry norm, not a compromise. Online agent orchestrates + logs gaps (SQL feedback table), offline loop turns gaps into tools, review gate, redeploy
+- The open-loop design is the industry norm, not a compromise. Online agent orchestrates + logs gaps (SQL feedback table), offline loop turns gaps into tools, review gate, redeploy
 
 **Q2: How is the write-permission conflict handled? Scoped bot identity, not "no write"**
 - Converged model: agent gets its own GitHub App bot identity, short-lived repo-scoped tokens, write ONLY to its own branches (GitHub Copilot agent: only `copilot/*` branches), branch protection on main with no bypass, agent opens PRs but can NEVER approve or merge, CI + human (not the requester) signs off
@@ -272,7 +272,7 @@ Sources: [Amazon tool-making pipeline](https://arxiv.org/html/2607.08010v1), [So
 
 Correction to Figure 1 reading: data collector -> tool maker -> reflector -> testing -> deploy is the OFFLINE pipeline. There is no online toolmaking in the paper. Online = agent runtime + a monitoring loop that sends flagged tools back through the offline pipeline (shadow deploy -> manual review -> promote). Confirms Conversation 5 from the primary source: tools are never born online.
 
-**Domain**: alarm triage in Amazon fulfillment centers, not QA. SOP decision tree (44 decision + 19 action nodes), agents check metrics, find root cause, act. Structurally identical to label QA: repeated per-item procedural checks against production data ending in a verdict. Their SOP node = our failure mode.
+**Domain**: alarm triage in Amazon fulfillment centers, not QA. SOP decision tree (44 decision + 19 action nodes), agents check metrics, find root cause, act. Structurally identical to label QA: repeated per-item procedural checks against production data ending in a decision. Their SOP node = our failure mode.
 
 **Offline pipeline mechanics (worth stealing)**
 1. Data-collector sub-agent runs baseline codegen on ~3 sampled cases against live MCP, captures execution traces (real schemas, not imagined)
@@ -302,8 +302,8 @@ Correction to Figure 1 reading: data collector -> tool maker -> reflector -> tes
 
 **The five tables, everything joins on run_id**
 1. `aqua_runs`: one row per invocation. run_id, invoked_via (cli/copilot/hpc), dataset_tag, model, harness_version, tool_versions, config, timestamps, status, items_total/flagged, tokens, cost. Makes results reproducible and A/B-able across tool updates (Amazon versioning lesson)
-2. `aqua_traces`: one row per step, append-only. run_id, item_id, step_idx, event_type (llm_call/tool_call/verdict), tool_name, tool_args, tool_result_summary, result_uri, tokens, latency_ms. Caution: no full payloads in BQ rows, summary + result_uri pointer to object storage (same bytes-vs-pointers logic as crops)
-3. `aqua_verdicts`: one row per item. run_id, item_id, dataset_tag, matched_mode, verdict (confirm/propose_fix/flag_unknown), proposed_fix, evidence, confidence, gt_label, gt_correct (nullable). The table stakeholders query, the rework API reads, flag_unknown rows = taxonomy-growth queue
+2. `aqua_traces`: one row per step, append-only. run_id, item_id, step_idx, event_type (llm_call/tool_call/decision), tool_name, tool_args, tool_result_summary, result_uri, tokens, latency_ms. Caution: no full payloads in BQ rows, summary + result_uri pointer to object storage (same bytes-vs-pointers logic as crops)
+3. `aqua_decisions`: one row per item. run_id, item_id, dataset_tag, matched_mode, decision (confirm/propose_fix/flag_unknown), proposed_fix, evidence, confidence, gt_label, gt_correct (nullable). The table stakeholders query, the rework API reads, flag_unknown rows = taxonomy-growth queue
 4. `aqua_failure_modes`: read-only mirror of the git taxonomy. mode_id, taxonomy_version, name, spec_text, detector_name/version, status, promoted_at. Written only by the git sync job, never the agent
 5. `aqua_actions` (phase 2): audit trail of side effects. run_id, item_id, action_type (rework_ticket/label_patch), external_ref, status. Defer until rework API is wired, reserve the name
 
