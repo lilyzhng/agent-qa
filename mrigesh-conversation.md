@@ -399,5 +399,21 @@ Sources: [Laminar](https://laminar.sh/), [LangSmith observability](https://www.l
 - Nuance: small data flips it. DuckDB over 44 MB parquet locally beats a BQ round trip. The gap opens with scale and ad-hoc SQL. Converging via external/BigLake tables (BQ querying parquet in place, at a penalty) = lakehouse
 - Why this vindicates the Slack message: "columnar on LakeFS too heavy for the agent" is true because the agent would have to BE the query engine inside a tool call (list objects, fetch 500 KB files, decode, filter). Metadata in BQ = the tool is one SQL call. Agent holds pointers and queries, not bytes and file handling
 
+## Conversation 12: Does Aqua query a lot? Final storage decision
+
+**Aqua's workload splits into two shapes**
+- A few big analytical queries, once per run: candidate selection ("all items like this reported one" = the seeded-failure-mining scan), eval join vs GT, reporting. This is what BQ is for
+- Many small per-item operations, thousands per run: read metadata, load crop, zoom/enhance, OCR, cross-check, decide, write. This never touches BQ
+- Design rule: query once at run start (pull candidate list + metadata into memory), loop locally against the crop cache, buffer decisions, one batch insert at the end. BQ's seconds-latency lives only on the once-per-run path
+- Aqua is inspect-heavy, not query-heavy. The crop cache (Conv 9) matters more to speed than any DB choice
+- MCP tool translation: list_items(filter) = the one BQ query. view_sample/inspect/ocr = local cache, no network. submit_decision = buffer, flush in batch
+
+**Decision: BQ is the stack, with three refinements**
+- No Postgres: not because "no transactions" exactly, but no SERVING workload (no ms point-lookups, no concurrent updates). If a front end later needs "show this item now", sync a slice out: serving add-on, not redesign
+- Don't write LakeFS out of the story: crops still come from it. Parquet is cheap to read once-in-bulk-by-a-script (pyarrow/DuckDB, ~10 lines) and expensive to read repeatedly-per-item-by-an-agent. LakeFS keeps two roles: system of record with versioning (add a lakefs_ref column to aqua_events to record which label commit a run QA'd against) and the byte source the crop cache hydrates from
+- BQ dislikes UPDATEs: fine while decisions are append-only. When rework wants status transitions (proposed -> ticketed -> fixed), model as appended events + latest-state view (standard BQ idiom), don't fight for UPDATEs
+
+**Final stack: BQ = query surface, LakeFS = source of truth + byte source, local cache = the agent's working set, no Postgres until something needs serving**
+
 (discussion continues below)
 
