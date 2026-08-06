@@ -34,6 +34,18 @@
 4. Then `corrupt.py`, `eval.py`, detectors, and data. Smoke test with data on local disk via path flag; proper data home (repo test-data vs blob storage vs BigQuery) is a PR-review question.
 5. PR with eval numbers: run the 100-item eval, compare internal model vs the gpt-4o-mini baseline in `report.md`.
 
+## Phase: internal data via BigQuery / data-bae (next after the port)
+
+The repo has NO SQL/data-pull functions — all tools read local JSON + crops (Mapillary stand-in). To test on internal traffic-sign data:
+
+- Use **data-bae** (Mrigesh) as plain Python / raw queries, NOT its MCP-server packaging (MCP is stripped from the wheel). Ask Mrigesh for the direct access path.
+- Build `data_source.py` adapter behind the existing tool interface, keeping local data as default (`--source=bigquery` flag) so the working loop never breaks:
+  - `list_items(dataset_tag)` → SQL on autolabel/cache-label tables, emitting the same item shape tools.py uses today.
+  - `view_sample(item_id)` → needs image fetch + bbox crop: labels reference full frames in blob storage; find where frames live and whether pre-cropped patches are cached.
+  - Schema mapping internal taxonomy → Aqua's fields (class, bbox, sign value). This is the real work, not the SQL.
+- Eval caveat: internal data may have no curated GT — first internal run is qualitative (verdicts sane on N items), not P/R/F1.
+- Before writing code: verify BigQuery read permission with one manual SELECT from the workstation.
+
 ## Open questions (carry into work threads)
 
 - **Headless auth:** how do batch/cluster jobs get a LIAM identity (no human SSO)? Ask Mrigesh — needed before any sandbox/cluster launch. (Sandbox launch does NOT need MCP; function tools run in-process. Only needs egress + creds to proxy/BigQuery/storage.)
