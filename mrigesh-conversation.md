@@ -293,5 +293,23 @@ Correction to Figure 1 reading: data collector -> tool maker -> reflector -> tes
 - Spec quality is the bottleneck (paper's Section 4.3 title). Verbatim: "Two undeployed Opus runs confirm the cause: augmenting the training data raises pass@1 to 96.6%, and clarifying the ambiguous SOP raises it to 99.9%" (from 94.5%). Spec clarity beat data augmentation (99.9 vs 96.6, Table 2). Note: the paper compares spec vs data, NOT spec vs model upgrades. "Write each failure mode like an SOP node" is our inference by analogy (spec ambiguity compiles into tool bugs), not the paper's claim
 - Shadow deployment as promotion gate: new tool versions run parallel to production, discrepancies reviewed before promotion. Copy for Aqua v2 detector updates
 
+## Conversation 7: BigQuery table design (failure modes, feedback, traces)
+
+**Split first: two different artifacts, opposite write policies**
+- Feedback/observation log: agent-writable on the fly, append-only, high volume. The runtime exhaust that feeds offline work (Amazon's logged fallback events)
+- Failure-mode taxonomy: NOT agent-written. It is the spec layer detectors compile from, must be curated (SkillsBench: curated +16.2pp, self-generated negative). Agent writing modes on the fly = online tool-birth one level up. Flow: agent writes a candidate to feedback ("pattern X, no mode matches") -> human reviews -> promoted entry lands in taxonomy
+- Taxonomy lives in git (YAML/markdown next to detectors in data-platform, PR-reviewed), mirrored to a read-only BQ view for joins
+
+**The five tables, everything joins on run_id**
+1. `aqua_runs`: one row per invocation. run_id, invoked_via (cli/copilot/hpc), dataset_tag, model, harness_version, tool_versions, config, timestamps, status, items_total/flagged, tokens, cost. Makes results reproducible and A/B-able across tool updates (Amazon versioning lesson)
+2. `aqua_traces`: one row per step, append-only. run_id, item_id, step_idx, event_type (llm_call/tool_call/verdict), tool_name, tool_args, tool_result_summary, result_uri, tokens, latency_ms. Caution: no full payloads in BQ rows, summary + result_uri pointer to object storage (same bytes-vs-pointers logic as crops)
+3. `aqua_verdicts`: one row per item. run_id, item_id, dataset_tag, matched_mode, verdict (confirm/propose_fix/flag_unknown), proposed_fix, evidence, confidence, gt_label, gt_correct (nullable). The table stakeholders query, the rework API reads, flag_unknown rows = taxonomy-growth queue
+4. `aqua_failure_modes`: read-only mirror of the git taxonomy. mode_id, taxonomy_version, name, spec_text, detector_name/version, status, promoted_at. Written only by the git sync job, never the agent
+5. `aqua_actions` (phase 2): audit trail of side effects. run_id, item_id, action_type (rework_ticket/label_patch), external_ref, status. Defer until rework API is wired, reserve the name
+
+**Deliberate omission**: no aqua_labels table. Labels stay in the Krishna-exported sensing segment stage gold tables, referenced by ID. One source of truth for label state
+
+**The ask to Mrigesh** (not "create a table for us"): where should Aqua's app-owned tables live (which project/dataset per data-platform convention), and how does a sandboxed job get WRITE access to that one dataset? Agent needs append-only insert on tables 2 and 3 (1 written by harness, 4 by CI, 5 later). One dataset, insert-only, no update/delete: the narrow grant shape that passes permissions review
+
 (discussion continues below)
 
