@@ -345,5 +345,18 @@ No Krishna, no BQ, no internal GT, no data-platform PR, no Dillon, no sandbox. D
 - +4: the two BQ tables (until then MCP server logs events/decisions to local JSONL with the same schema, migration = loader script)
 - +5: batch harness on HPC = the first moment Docker permissions actually matter
 
+## Conversation 9: SLIF dataset, bytes vs pointers (sizing from Lily's estimate)
+
+Numbers posted to the thread: total dataset incl. crops column ~22 GB, metadata + GT ~44 MB, ~500 KB per parquet file, all on LakeFS in columnar format.
+
+**Decision: split by access pattern, not by size**
+- Metadata + GT (44 MB) -> BQ. It is what the agent queries (filter by class, join decisions, pick items). Small enough to hand-load before the Krishna weekly export exists, registry export becomes the durable refresh
+- Crops (22 GB) -> NOT BQ, and not because of size (well under Mrigesh's terabytes-per-week threshold). The agent does repeated point lookups per item, and BQ is built for scans, not blob serving: bytes through SQL per item is slow, clunky via MCP, and pays scan cost on the bytes column
+- Materialize crops once: prep script reads parquet from LakeFS, writes PNGs keyed by item ID to local/HPC cache. One-time ~20 min download. view_sample(item_id) = local file read, same as the Mapillary MVP tools today. Matches what Lily proposed in the meeting (cache locally, HPC has it pre-staged)
+- BQ rows carry pointers: lakefs_path + crop_key. Cache miss -> resolve from LakeFS, backfill
+- Warehouse for queries, storage/cache for pixels, pointers in rows: the standard split
+
+**Open in the same thread**: where the shared crop cache lives for HPC runs (shared volume / baked into Docker image / object bucket). Workstation MVP = a directory; name the future home now
+
 (discussion continues below)
 
