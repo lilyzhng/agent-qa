@@ -378,5 +378,26 @@ Same question as SLIF crops, same unanimous answer: **bytes never go in the data
 
 Sources: [Laminar](https://laminar.sh/), [LangSmith observability](https://www.langchain.com/langsmith/observability), [Postgres wiki: binary files in DB](https://wiki.postgresql.org/wiki/BinaryFilesInDB), [blob vs DB tradeoffs](https://engineeringatscale.substack.com/p/when-to-use-blob-storage-vs-database), [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
 
+## Conversation 11: Postgres vs BigQuery vs ClickHouse vs LakeFS Parquet
+
+**The three stores: not a speed ladder, each fastest at its own query shape**
+
+| | Postgres | BigQuery | ClickHouse-style OLAP |
+|---|---|---|---|
+| Built for | transactions, point lookups | batch analytics over huge data | fast aggregations on streaming events |
+| Read it loves | "get run 4711's rows, now" | "scan 90 days, group by mode" | "dashboard over last hour, sub-second" |
+| Write pattern | many small inserts, updates OK | bulk/batch loads, append-only | high-rate streaming append |
+| Latency | milliseconds | seconds | sub-second aggregates |
+
+- Mature trace stacks use all three roles at once: row store for the application (users, projects, configs), columnar for the exhaust (traces), object store for bytes. Langfuse migrated traces Postgres -> ClickHouse at volume, kept Postgres for app state. LangSmith: same pair + object storage
+- BQ is the columnar pick when traces are analyzed not operated on: batch cadence, joins with company data, zero ops, per-scan billing. Right for Aqua (data already in BQ, per-run batch appends, analytical queries). Future front-end snappy per-item lookups = sync a slice to Postgres, a serving need, not a storage redesign
+- Interview one-liner: row store for operating, columnar for analyzing, object store for bytes
+
+**BigQuery vs LakeFS Parquet: "columnar" is the file layout, the only thing they share**
+- Parquet on LakeFS = passive columnar files in object storage. LakeFS's real value = git-style versioning (branches/commits over data). Files cannot answer questions: YOU bring the engine (Spark, Trino, DuckDB), which must list, fetch, decode, filter
+- BigQuery = columnar storage (Capacitor) co-designed with a parallel engine (Dremel) + metadata/statistics, partition and cluster pruning, optimizer, result caching, thousands of workers per query. Speed comes from engine + pruning, not columnar-ness
+- Nuance: small data flips it. DuckDB over 44 MB parquet locally beats a BQ round trip. The gap opens with scale and ad-hoc SQL. Converging via external/BigLake tables (BQ querying parquet in place, at a penalty) = lakehouse
+- Why this vindicates the Slack message: "columnar on LakeFS too heavy for the agent" is true because the agent would have to BE the query engine inside a tool call (list objects, fetch 500 KB files, decode, filter). Metadata in BQ = the tool is one SQL call. Agent holds pointers and queries, not bytes and file handling
+
 (discussion continues below)
 
