@@ -290,7 +290,7 @@ Correction to Figure 1 reading: data collector -> tool maker -> reflector -> tes
 - Offline cons: needs labeled cases per check, feedback loop stays semi-automated ("cannot yet guarantee every failure caught without human review")
 
 **Two Aqua-relevant findings**
-- Spec quality dominates model quality: clarifying ambiguous SOP text moved pass@1 94.5% -> 99.9%. Write each failure mode like an SOP node, the taxonomy doc is worth more than model upgrades
+- Spec quality is the bottleneck (paper's Section 4.3 title). Verbatim: "Two undeployed Opus runs confirm the cause: augmenting the training data raises pass@1 to 96.6%, and clarifying the ambiguous SOP raises it to 99.9%" (from 94.5%). Spec clarity beat data augmentation (99.9 vs 96.6, Table 2). Note: the paper compares spec vs data, NOT spec vs model upgrades. "Write each failure mode like an SOP node" is our inference by analogy (spec ambiguity compiles into tool bugs), not the paper's claim
 - Shadow deployment as promotion gate: new tool versions run parallel to production, discrepancies reviewed before promotion. Copy for Aqua v2 detector updates
 
 (discussion continues below)
